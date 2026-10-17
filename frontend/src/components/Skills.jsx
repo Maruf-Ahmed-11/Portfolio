@@ -188,24 +188,27 @@ const Skills = () => {
       : skillsData.filter((skill) => skill.category === activeTab);
 
   return (
-    <section id="skills" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <section id="skills" className="py-24 px-6 md:px-12 max-w-7xl mx-auto relative">
+      {/* Background ambient glow */}
+      <div className="absolute top-1/3 right-10 w-96 h-96 bg-purple-600/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e3e4db] text-[#3b252c] text-xs font-bold uppercase tracking-wider shadow-xs">
-          <HiOutlineCode className="text-[#8f6593] text-sm" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950/40 border border-purple-500/30 text-purple-300 text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-sm">
+          <HiOutlineCode className="text-purple-400 text-sm" />
           <span>Technical Arsenal</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#3b252c] tracking-tight">
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f6593] via-[#a372a8] to-[#3b252c]">Skills</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-400 to-purple-200">Skills</span>
         </h2>
 
-        <p className="text-base sm:text-lg text-[#3b252c]/80">
+        <p className="text-base sm:text-lg text-zinc-400">
           The technologies, libraries, and developer tools I leverage to build fast, responsive, and delightful web applications.
         </p>
       </div>
 
-      {/* Filter Tabs (Distinct High-Contrast Toggle Buttons) */}
+      {/* Filter Tabs */}
       <div className="flex flex-wrap items-center justify-center gap-2.5 mb-12">
         {categories.map((cat) => (
           <button
@@ -213,8 +216,8 @@ const Skills = () => {
             onClick={() => setActiveTab(cat.id)}
             className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-300 cursor-pointer ${
               activeTab === cat.id
-                ? "bg-[#3b252c] text-white shadow-md border-2 border-[#3b252c] scale-105"
-                : "bg-white text-[#3b252c] border-2 border-[#e3e4db] hover:border-[#3b252c] hover:bg-[#f4f4f0]"
+                ? "bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.4)] border border-purple-400/40 scale-105"
+                : "bg-[#0e071c]/80 text-zinc-300 border border-purple-500/20 hover:border-purple-400 hover:text-white"
             }`}
           >
             {cat.name}
@@ -229,40 +232,40 @@ const Skills = () => {
           return (
             <div
               key={skill.name}
-              className="bg-white rounded-2xl border border-[#e3e4db] p-5 shadow-xs hover:shadow-xl hover:shadow-[#3b252c]/8 hover:border-[#8f6593] transition-all duration-300 group flex flex-col justify-between"
+              className="bg-[#0e071c]/90 rounded-2xl border border-purple-500/20 p-5 shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:shadow-[0_0_20px_rgba(168,85,247,0.25)] hover:border-purple-400/60 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center border text-2xl bg-[#fafaf8] border-[#e3e4db] text-[#8f6593] group-hover:scale-110 group-hover:bg-[#8f6593] group-hover:text-white group-hover:border-[#8f6593] transition-all shadow-xs">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center border text-2xl bg-[#140a28] border-purple-500/30 text-purple-300 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white group-hover:border-purple-400 transition-all shadow-[0_0_10px_rgba(168,85,247,0.15)]">
                     <Icon />
                   </div>
 
                   <span
                     className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${
                       skill.level === "Advanced"
-                        ? "bg-[#8f6593]/10 text-[#8f6593] border-[#8f6593]/30"
+                        ? "bg-purple-950/60 text-purple-300 border-purple-500/40 shadow-[0_0_8px_rgba(168,85,247,0.3)]"
                         : skill.level === "Proficient"
-                        ? "bg-[#3b252c]/10 text-[#3b252c] border-[#3b252c]/20"
-                        : "bg-[#aea4bf]/20 text-[#3b252c] border-[#aea4bf]/40"
+                        ? "bg-fuchsia-950/60 text-fuchsia-300 border-fuchsia-500/30"
+                        : "bg-purple-900/30 text-zinc-300 border-purple-500/20"
                     }`}
                   >
                     {skill.level}
                   </span>
                 </div>
 
-                <h3 className="font-bold text-[#3b252c] text-base mb-1 group-hover:text-[#8f6593] transition-colors">
+                <h3 className="font-bold text-white text-base mb-1 group-hover:text-purple-300 transition-colors">
                   {skill.name}
                 </h3>
 
-                <p className="text-xs text-[#3b252c]/75 leading-relaxed">
+                <p className="text-xs text-zinc-400 leading-relaxed">
                   {skill.description}
                 </p>
               </div>
 
               {/* Progress Indicator */}
-              <div className="mt-4 pt-3 border-t border-[#e3e4db] flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#8f6593] shadow-[0_0_6px_#8f6593]"></span>
-                <span className="text-[11px] text-[#3b252c]/60 font-semibold capitalize">
+              <div className="mt-4 pt-3 border-t border-purple-500/15 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_6px_#a855f7]"></span>
+                <span className="text-[11px] text-zinc-400 font-semibold capitalize">
                   {skill.category}
                 </span>
               </div>

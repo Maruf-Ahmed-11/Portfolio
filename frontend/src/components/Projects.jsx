@@ -7,20 +7,23 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 px-6 md:px-12 max-w-7xl mx-auto"
+      className="py-24 px-6 md:px-12 max-w-7xl mx-auto relative"
     >
+      {/* Background ambient glow */}
+      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e3e4db] text-[#3b252c] text-xs font-bold uppercase tracking-wider shadow-xs">
-          <HiOutlineSparkles className="text-[#8f6593] text-sm" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950/40 border border-purple-500/30 text-purple-300 text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-sm">
+          <HiOutlineSparkles className="text-purple-400 text-sm" />
           <span>My Portfolio Projects</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#3b252c] tracking-tight">
-          Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f6593] via-[#a372a8] to-[#3b252c]">Projects</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+          Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-400 to-purple-200">Projects</span>
         </h2>
 
-        <p className="text-base sm:text-lg text-[#3b252c]/80">
+        <p className="text-base sm:text-lg text-zinc-400">
           Explore real-world web applications I built to solve practical problems, demonstrating clean code, modern UI/UX design, and responsive frontend architectures.
         </p>
       </div>
@@ -30,10 +33,10 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="group bg-white rounded-2xl border border-[#e3e4db] shadow-xs hover:shadow-2xl hover:shadow-[#3b252c]/10 hover:border-[#8f6593] transition-all duration-300 flex flex-col overflow-hidden"
+            className="group bg-[#0e071c]/90 rounded-2xl border border-purple-500/20 shadow-[0_4px_25px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(168,85,247,0.25)] hover:border-purple-400/60 transition-all duration-300 flex flex-col overflow-hidden"
           >
             {/* Card Thumbnail / Image Container */}
-            <div className="relative aspect-video w-full overflow-hidden bg-[#fafaf8] border-b border-[#e3e4db]">
+            <div className="relative aspect-video w-full overflow-hidden bg-[#140a28] border-b border-purple-500/20">
               <img
                 src={project.image}
                 alt={project.title}
@@ -41,7 +44,7 @@ const Projects = () => {
                 loading="lazy"
               />
               {project.category && (
-                <span className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs text-[#3b252c] text-[11px] font-bold px-2.5 py-1 rounded-md border border-[#e3e4db] shadow-xs">
+                <span className="absolute top-3 left-3 bg-[#06020e]/85 backdrop-blur-md text-purple-300 text-[11px] font-bold px-2.5 py-1 rounded-md border border-purple-500/30 shadow-xs">
                   {project.category}
                 </span>
               )}
@@ -50,11 +53,11 @@ const Projects = () => {
             {/* Card Body */}
             <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
               <div className="space-y-2.5">
-                <h3 className="text-xl font-bold text-[#3b252c] group-hover:text-[#8f6593] transition-colors">
+                <h3 className="text-xl font-bold text-white group-hover:text-purple-300 transition-colors">
                   {project.title}
                 </h3>
 
-                <p className="text-sm text-[#3b252c]/75 line-clamp-2 leading-relaxed">
+                <p className="text-sm text-zinc-400 line-clamp-2 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -63,24 +66,24 @@ const Projects = () => {
                   {project.technologies.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-[#fafaf8] text-[#3b252c] border border-[#e3e4db]"
+                      className="px-2.5 py-0.5 text-xs font-semibold rounded-md bg-purple-950/40 text-purple-300 border border-purple-500/30"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 4 && (
-                    <span className="px-2 py-0.5 text-xs font-semibold rounded-md bg-white text-[#3b252c]/65 border border-[#e3e4db]">
+                    <span className="px-2 py-0.5 text-xs font-semibold rounded-md bg-[#140a28] text-zinc-400 border border-purple-500/20">
                       +{project.technologies.length - 4}
                     </span>
                   )}
                 </div>
               </div>
 
-              {/* Card Footer Actions (Distinct Buttons) */}
-              <div className="pt-4 border-t border-[#e3e4db] flex items-center justify-between gap-2">
+              {/* Card Footer Actions */}
+              <div className="pt-4 border-t border-purple-500/15 flex items-center justify-between gap-2">
                 <Link
                   to={`/projects/${project.id}`}
-                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#8f6593] hover:text-[#3b252c] transition"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-purple-400 hover:text-white transition"
                 >
                   <span>Details &amp; Tech</span>
                   <HiArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
@@ -93,7 +96,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="View Source Code on GitHub"
-                      className="p-2 text-[#3b252c] hover:bg-[#3b252c] hover:text-white rounded-lg border border-[#e3e4db] hover:border-[#3b252c] transition shadow-2xs"
+                      className="p-2 text-zinc-300 bg-[#140a28] hover:bg-purple-600 hover:text-white rounded-lg border border-purple-500/20 hover:border-purple-400 transition shadow-2xs"
                     >
                       <FaGithub className="text-base" />
                     </a>
@@ -105,7 +108,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Open Live Demo"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-[#8f6593] hover:bg-[#774e7c] text-white shadow-xs hover:shadow-md transition border border-[#8f6593]"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white shadow-[0_0_12px_rgba(168,85,247,0.35)] hover:shadow-[0_0_18px_rgba(192,38,211,0.6)] transition border border-purple-400/30"
                     >
                       <span>Demo</span>
                       <HiExternalLink className="text-sm" />
@@ -120,13 +123,13 @@ const Projects = () => {
 
       {/* Bottom Github Note */}
       <div className="mt-12 text-center">
-        <p className="text-sm text-[#3b252c]/70">
+        <p className="text-sm text-zinc-400">
           Want to see more code and experiments? Check out my{" "}
           <a
-            href="https://github.com/"
+            href="https://github.com/Maruf-Ahmed-11"
             target="_blank"
             rel="noreferrer"
-            className="font-bold text-[#8f6593] hover:text-[#3b252c] underline decoration-[#8f6593]/40 hover:decoration-[#8f6593] inline-flex items-center gap-1"
+            className="font-bold text-purple-400 hover:text-white underline decoration-purple-500/40 hover:decoration-purple-400 inline-flex items-center gap-1"
           >
             GitHub profile <HiExternalLink />
           </a>

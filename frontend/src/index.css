@@ -4,39 +4,105 @@
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
 
-  /* The 5 Palette Colors from the DesignAcademy Reference */
-  --color-sand-bone: #e3e4db;
-  --color-sand-light: #fafaf8;
-  --color-sand-surface: #f4f4f0;
-  --color-silver-fog: #cdcdcd;
-  --color-lilac-mist: #aea4bf;
-  --color-plum-mauve: #8f6593;
-  --color-plum-hover: #774e7c;
-  --color-plum-dark: #623e66;
-  --color-espresso-charcoal: #3b252c;
-  --color-espresso-hover: #27171d;
+  --color-dark-bg: #06020e;
+  --color-dark-card: #0d061a;
+  --color-dark-border: rgba(168, 85, 247, 0.18);
+  --color-neon-purple: #a855f7;
+  --color-neon-fuchsia: #c026d3;
 }
 
-/* Custom Editorial Scrollbar */
+/* Custom Cyberpunk Dark Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f4f4f0;
+  background: #06020e;
 }
 ::-webkit-scrollbar-thumb {
-  background: #aea4bf;
+  background: #581c87;
   border-radius: 4px;
-  border: 1px solid #e3e4db;
+  border: 1px solid rgba(168, 85, 247, 0.3);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8f6593;
+  background: #a855f7;
 }
 
 html {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  background-color: #fafaf8;
-  color: #3b252c;
-  color-scheme: light;
+  background-color: #06020e;
+  color: #f3f4f6;
+  color-scheme: dark;
+}
+
+/* Cyberpunk Grid Background */
+.bg-cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Smooth Floating Keyframes */
+@keyframes float-1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg);
+  }
+}
+
+@keyframes float-2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(14px) rotate(-4deg);
+  }
+}
+
+@keyframes float-3 {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-12px);
+  }
+}
+
+@keyframes float-4 {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(10px) translateY(-14px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.06);
+  }
+}
+
+.animate-float-1 {
+  animation: float-1 4.5s ease-in-out infinite;
+}
+.animate-float-2 {
+  animation: float-2 5.2s ease-in-out infinite;
+}
+.animate-float-3 {
+  animation: float-3 6s ease-in-out infinite;
+}
+.animate-float-4 {
+  animation: float-4 4.8s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3.5s ease-in-out infinite;
 }
 
