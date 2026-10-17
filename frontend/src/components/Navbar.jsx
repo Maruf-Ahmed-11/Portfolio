@@ -7,7 +7,6 @@ const navLinks = [
   { name: "About", id: "about" },
   { name: "Skills", id: "skills" },
   { name: "Projects", id: "projects" },
-  { name: "Experience", id: "experience" },
   { name: "Education", id: "education" },
   { name: "Contact", id: "contact" },
 ];
@@ -51,11 +50,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 print:hidden ${
-        scrolled || !isHomePage
+      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 print:hidden ${scrolled || !isHomePage
           ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-[#e3e4db]"
           : "bg-[#fafaf8]/80 backdrop-blur-xs border-b border-[#e3e4db]/60"
-      }`}
+        }`}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
         {/* Logo */}
@@ -81,17 +79,15 @@ const Navbar = () => {
               <li key={link.id} className="group">
                 <a
                   href={href}
-                  className={`relative py-1 font-semibold text-sm transition-colors duration-200 ${
-                    isLinkActive
+                  className={`relative py-1 font-semibold text-sm transition-colors duration-200 ${isLinkActive
                       ? "text-[#8f6593] font-bold"
                       : "text-[#3b252c]/70 hover:text-[#3b252c]"
-                  }`}
+                    }`}
                 >
                   {link.name}
                   <span
-                    className={`absolute left-0 -bottom-1 h-0.5 bg-[#8f6593] transition-all duration-300 rounded-full ${
-                      isLinkActive ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute left-0 -bottom-1 h-0.5 bg-[#8f6593] transition-all duration-300 rounded-full ${isLinkActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
                   ></span>
                 </a>
               </li>
@@ -122,9 +118,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`md:hidden bg-white/98 backdrop-blur-xl border-b border-[#e3e4db] shadow-xl overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-96 py-6 px-6" : "max-h-0 py-0 px-6"
-        }`}
+        className={`md:hidden bg-white/98 backdrop-blur-xl border-b border-[#e3e4db] shadow-xl overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 py-6 px-6" : "max-h-0 py-0 px-6"
+          }`}
       >
         <ul className="flex flex-col gap-4">
           {navLinks.map((link) => {
@@ -136,9 +131,8 @@ const Navbar = () => {
                 <a
                   href={href}
                   onClick={closeMenu}
-                  className={`block py-1.5 text-base font-semibold transition ${
-                    isLinkActive ? "text-[#8f6593] font-bold" : "text-[#3b252c]/75 hover:text-[#3b252c]"
-                  }`}
+                  className={`block py-1.5 text-base font-semibold transition ${isLinkActive ? "text-[#8f6593] font-bold" : "text-[#3b252c]/75 hover:text-[#3b252c]"
+                    }`}
                 >
                   {link.name}
                 </a>
