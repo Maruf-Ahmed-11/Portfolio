@@ -57,16 +57,16 @@ const Contact = () => {
     <section id="contact" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-          <HiOutlineChatAlt2 className="text-blue-600 text-sm" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e3e4db] text-[#3b252c] text-xs font-bold uppercase tracking-wider shadow-xs">
+          <HiOutlineChatAlt2 className="text-[#8f6593] text-sm" />
           <span>Get In Touch</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-          Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Connect</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#3b252c] tracking-tight">
+          Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f6593] via-[#a372a8] to-[#3b252c]">Connect</span>
         </h2>
 
-        <p className="text-base sm:text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-[#3b252c]/80">
           Have an entry-level opening, internship, freelance project, or simply want to chat about tech? My inbox is always open.
         </p>
       </div>
@@ -74,11 +74,11 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Direct Info Cards & Social Links (5 cols) */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="bg-white rounded-2xl border border-gray-200/90 p-6 sm:p-8 shadow-xs space-y-6">
-            <h3 className="text-xl font-bold text-gray-900">
+          <div className="bg-white rounded-2xl border border-[#e3e4db] p-6 sm:p-8 shadow-xl space-y-6">
+            <h3 className="text-xl font-bold text-[#3b252c]">
               Contact Information
             </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-sm text-[#3b252c]/80 leading-relaxed">
               I am actively looking for full-time junior frontend or full-stack opportunities and am available to join immediately.
             </p>
 
@@ -86,16 +86,16 @@ const Contact = () => {
               {/* Email */}
               <a
                 href="mailto:youremail@example.com"
-                className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
+                className="flex items-start gap-4 p-3.5 rounded-xl bg-[#fafaf8] hover:bg-[#f4f4f0] border border-[#e3e4db] hover:border-[#8f6593] transition group"
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-lg bg-white text-[#8f6593] border border-[#e3e4db] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
                   <HiOutlineMail className="text-xl" />
                 </div>
                 <div>
-                  <span className="text-xs text-gray-500 font-medium block">
+                  <span className="text-xs text-[#3b252c]/60 font-semibold block">
                     Email Address
                   </span>
-                  <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <span className="text-sm font-bold text-[#3b252c] group-hover:text-[#8f6593] transition-colors">
                     youremail@example.com
                   </span>
                 </div>
@@ -104,31 +104,31 @@ const Contact = () => {
               {/* Phone */}
               <a
                 href="tel:+8801700000000"
-                className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
+                className="flex items-start gap-4 p-3.5 rounded-xl bg-[#fafaf8] hover:bg-[#f4f4f0] border border-[#e3e4db] hover:border-[#8f6593] transition group"
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-lg bg-white text-[#8f6593] border border-[#e3e4db] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
                   <HiOutlinePhone className="text-xl" />
                 </div>
                 <div>
-                  <span className="text-xs text-gray-500 font-medium block">
+                  <span className="text-xs text-[#3b252c]/60 font-semibold block">
                     Phone / WhatsApp
                   </span>
-                  <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <span className="text-sm font-bold text-[#3b252c] group-hover:text-[#8f6593] transition-colors">
                     +880 1700-000000
                   </span>
                 </div>
               </a>
 
               {/* Location */}
-              <div className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 border border-gray-100">
-                <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+              <div className="flex items-start gap-4 p-3.5 rounded-xl bg-[#fafaf8] border border-[#e3e4db]">
+                <div className="w-10 h-10 rounded-lg bg-white text-[#8f6593] border border-[#e3e4db] flex items-center justify-center shrink-0 shadow-2xs">
                   <HiOutlineLocationMarker className="text-xl" />
                 </div>
                 <div>
-                  <span className="text-xs text-gray-500 font-medium block">
+                  <span className="text-xs text-[#3b252c]/60 font-semibold block">
                     Location
                   </span>
-                  <span className="text-sm font-semibold text-gray-900">
+                  <span className="text-sm font-bold text-[#3b252c]">
                     Dhaka, Bangladesh (Remote / On-site)
                   </span>
                 </div>
@@ -136,8 +136,8 @@ const Contact = () => {
             </div>
 
             {/* Social Links Bar */}
-            <div className="pt-4 border-t border-gray-100">
-              <span className="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-3">
+            <div className="pt-4 border-t border-[#e3e4db]">
+              <span className="text-xs font-bold text-[#3b252c]/65 uppercase tracking-wider block mb-3">
                 Social Profiles
               </span>
               <div className="flex items-center gap-3">
@@ -146,7 +146,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub Profile"
-                  className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-gray-900 hover:text-white flex items-center justify-center text-gray-700 transition"
+                  className="w-10 h-10 rounded-xl bg-[#fafaf8] border border-[#e3e4db] hover:bg-[#3b252c] hover:text-white hover:border-[#3b252c] flex items-center justify-center text-[#3b252c] transition shadow-2xs"
                 >
                   <FaGithub className="text-lg" />
                 </a>
@@ -155,7 +155,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn Profile"
-                  className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-blue-600 hover:text-white flex items-center justify-center text-gray-700 transition"
+                  className="w-10 h-10 rounded-xl bg-[#fafaf8] border border-[#e3e4db] hover:bg-[#3b252c] hover:text-white hover:border-[#3b252c] flex items-center justify-center text-[#3b252c] transition shadow-2xs"
                 >
                   <FaLinkedin className="text-lg" />
                 </a>
@@ -164,7 +164,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Twitter Profile"
-                  className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-sky-500 hover:text-white flex items-center justify-center text-gray-700 transition"
+                  className="w-10 h-10 rounded-xl bg-[#fafaf8] border border-[#e3e4db] hover:bg-[#3b252c] hover:text-white hover:border-[#3b252c] flex items-center justify-center text-[#3b252c] transition shadow-2xs"
                 >
                   <FaTwitter className="text-lg" />
                 </a>
@@ -175,21 +175,21 @@ const Contact = () => {
 
         {/* Right Column: Interactive Contact Form (7 cols) */}
         <div className="lg:col-span-7">
-          <div className="bg-white rounded-2xl border border-gray-200/90 p-6 sm:p-10 shadow-xs">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
+          <div className="bg-white rounded-2xl border border-[#e3e4db] p-6 sm:p-10 shadow-xl">
+            <h3 className="text-xl font-bold text-[#3b252c] mb-2">
               Send a Direct Message
             </h3>
-            <p className="text-sm text-gray-500 mb-6">
+            <p className="text-sm text-[#3b252c]/70 mb-6">
               Fill out the form below and I'll respond as soon as possible.
             </p>
 
             {/* Success Toast */}
             {status.submitted && (
-              <div className="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-3">
-                <HiOutlineCheckCircle className="text-2xl text-emerald-600 shrink-0" />
+              <div className="mb-6 p-4 rounded-xl bg-[#8f6593]/10 border border-[#8f6593]/30 text-[#3b252c] flex items-center gap-3">
+                <HiOutlineCheckCircle className="text-2xl text-[#8f6593] shrink-0" />
                 <div>
-                  <p className="text-sm font-bold">Message sent successfully!</p>
-                  <p className="text-xs text-emerald-700">
+                  <p className="text-sm font-bold text-[#3b252c]">Message sent successfully!</p>
+                  <p className="text-xs text-[#3b252c]/80">
                     Thank you for reaching out. I'll get back to you shortly.
                   </p>
                 </div>
@@ -198,7 +198,7 @@ const Contact = () => {
 
             {/* Error Message */}
             {status.error && (
-              <div className="mb-6 p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-sm">
+              <div className="mb-6 p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm">
                 {status.error}
               </div>
             )}
@@ -207,8 +207,8 @@ const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Name */}
                 <div>
-                  <label htmlFor="name" className="block text-xs font-semibold text-gray-700 uppercase mb-1.5">
-                    Your Name <span className="text-rose-500">*</span>
+                  <label htmlFor="name" className="block text-xs font-bold text-[#3b252c]/80 uppercase mb-1.5">
+                    Your Name <span className="text-[#8f6593]">*</span>
                   </label>
                   <input
                     id="name"
@@ -218,14 +218,14 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="John Doe"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
+                    className="w-full px-4 py-3 rounded-xl border border-[#e3e4db] bg-[#fafaf8] text-[#3b252c] placeholder-[#3b252c]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#8f6593] focus:border-[#8f6593] focus:bg-white transition"
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="block text-xs font-semibold text-gray-700 uppercase mb-1.5">
-                    Email Address <span className="text-rose-500">*</span>
+                  <label htmlFor="email" className="block text-xs font-bold text-[#3b252c]/80 uppercase mb-1.5">
+                    Email Address <span className="text-[#8f6593]">*</span>
                   </label>
                   <input
                     id="email"
@@ -235,14 +235,14 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="john@example.com"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
+                    className="w-full px-4 py-3 rounded-xl border border-[#e3e4db] bg-[#fafaf8] text-[#3b252c] placeholder-[#3b252c]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#8f6593] focus:border-[#8f6593] focus:bg-white transition"
                   />
                 </div>
               </div>
 
               {/* Subject */}
               <div>
-                <label htmlFor="subject" className="block text-xs font-semibold text-gray-700 uppercase mb-1.5">
+                <label htmlFor="subject" className="block text-xs font-bold text-[#3b252c]/80 uppercase mb-1.5">
                   Subject / Role
                 </label>
                 <input
@@ -252,14 +252,14 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Job Opportunity / Project Inquiry"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
+                  className="w-full px-4 py-3 rounded-xl border border-[#e3e4db] bg-[#fafaf8] text-[#3b252c] placeholder-[#3b252c]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#8f6593] focus:border-[#8f6593] focus:bg-white transition"
                 />
               </div>
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-xs font-semibold text-gray-700 uppercase mb-1.5">
-                  Your Message <span className="text-rose-500">*</span>
+                <label htmlFor="message" className="block text-xs font-bold text-[#3b252c]/80 uppercase mb-1.5">
+                  Your Message <span className="text-[#8f6593]">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -269,15 +269,15 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Hello! We are looking for a Junior Frontend Developer to join our team..."
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-[#e3e4db] bg-[#fafaf8] text-[#3b252c] placeholder-[#3b252c]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#8f6593] focus:border-[#8f6593] focus:bg-white transition resize-none"
                 ></textarea>
               </div>
 
-              {/* Submit Button */}
+              {/* Submit Button (Solid Amethyst Mauve CTA) */}
               <button
                 type="submit"
                 disabled={status.submitting}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-md shadow-blue-500/25 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#8f6593] hover:bg-[#774e7c] text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-[#8f6593]/25 hover:shadow-xl hover:shadow-[#8f6593]/35 border border-[#8f6593] transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {status.submitting ? (
                   <span>Sending Message...</span>

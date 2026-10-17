@@ -8,7 +8,7 @@ import Resume from './pages/Resume';
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col justify-between">
+      <div className="min-h-screen bg-[#fafaf8] text-[#3b252c] flex flex-col justify-between selection:bg-[#8f6593] selection:text-white">
         <Navbar />
         <div className="flex-grow">
           <Routes>

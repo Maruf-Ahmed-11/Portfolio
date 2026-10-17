@@ -31,19 +31,19 @@ const AboutMe = () => {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 md:px-12 max-w-7xl mx-auto bg-gray-50/50">
+    <section id="about" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-          <HiOutlineUser className="text-blue-600 text-sm" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e3e4db] text-[#3b252c] text-xs font-bold uppercase tracking-wider shadow-xs">
+          <HiOutlineUser className="text-[#8f6593] text-sm" />
           <span>About Me</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-          Who I <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Am</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#3b252c] tracking-tight">
+          Who I <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f6593] via-[#a372a8] to-[#3b252c]">Am</span>
         </h2>
 
-        <p className="text-base sm:text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-[#3b252c]/80">
           A glimpse into my journey, core values, and dedication as a passionate fresher web developer.
         </p>
       </div>
@@ -51,12 +51,13 @@ const AboutMe = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left Column: Visual Card & Quick Stats */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="relative bg-white rounded-2xl border border-gray-200/90 p-6 sm:p-8 shadow-sm">
+          <div className="relative bg-white rounded-2xl border border-[#e3e4db] p-6 sm:p-8 shadow-xl">
             {/* Ambient Accent Glow */}
-            <div className="w-24 h-24 bg-blue-500/10 rounded-full blur-2xl absolute -top-4 -right-4 -z-10"></div>
+            <div className="w-24 h-24 bg-[#8f6593]/10 rounded-full blur-2xl absolute -top-4 -right-4 -z-10"></div>
+            <div className="w-24 h-24 bg-[#aea4bf]/15 rounded-full blur-2xl absolute -bottom-4 -left-4 -z-10"></div>
 
-            <div className="flex items-center gap-4 mb-6 pb-6 border-b border-gray-100">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 shrink-0">
+            <div className="flex items-center gap-4 mb-6 pb-6 border-b border-[#e3e4db]">
+              <div className="w-16 h-16 rounded-2xl bg-[#3b252c] flex items-center justify-center text-white shadow-md shadow-[#3b252c]/15 shrink-0 border border-[#3b252c]">
                 <img
                   src={heroImg}
                   alt="Developer graphic"
@@ -64,52 +65,52 @@ const AboutMe = () => {
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Your Name</h3>
-                <p className="text-sm font-medium text-blue-600">Fresher Web Developer</p>
-                <div className="flex items-center gap-1.5 text-xs text-gray-500 mt-1">
-                  <HiOutlineLocationMarker className="text-gray-400" />
+                <h3 className="text-xl font-bold text-[#3b252c]">Your Name</h3>
+                <p className="text-sm font-semibold text-[#8f6593]">Fresher Web Developer</p>
+                <div className="flex items-center gap-1.5 text-xs text-[#3b252c]/70 mt-1">
+                  <HiOutlineLocationMarker className="text-[#8f6593]" />
                   <span>Dhaka, Bangladesh</span>
                 </div>
               </div>
             </div>
 
             {/* Quick Specs List */}
-            <div className="space-y-3 text-sm text-gray-600">
-              <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
-                <span className="flex items-center gap-2 text-gray-500">
-                  <HiOutlineBriefcase className="text-blue-600" /> Availability:
+            <div className="space-y-3 text-sm text-[#3b252c]/80">
+              <div className="flex items-center justify-between py-2 border-b border-[#e3e4db]">
+                <span className="flex items-center gap-2 text-[#3b252c]/70">
+                  <HiOutlineBriefcase className="text-[#8f6593]" /> Availability:
                 </span>
-                <span className="font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded text-xs">
+                <span className="font-bold text-[#8f6593] bg-[#8f6593]/10 border border-[#8f6593]/30 px-2.5 py-0.5 rounded-full text-xs">
                   Immediate Joining
                 </span>
               </div>
-              <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
-                <span className="flex items-center gap-2 text-gray-500">
-                  <FaLaptopCode className="text-blue-600" /> Primary Focus:
+              <div className="flex items-center justify-between py-2 border-b border-[#e3e4db]">
+                <span className="flex items-center gap-2 text-[#3b252c]/70">
+                  <FaLaptopCode className="text-[#8f6593]" /> Primary Focus:
                 </span>
-                <span className="font-semibold text-gray-800">React &amp; Modern Frontend</span>
+                <span className="font-bold text-[#3b252c]">React &amp; Modern Frontend</span>
               </div>
-              <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
-                <span className="flex items-center gap-2 text-gray-500">
-                  <HiOutlineMail className="text-blue-600" /> Communication:
+              <div className="flex items-center justify-between py-2 border-b border-[#e3e4db]">
+                <span className="flex items-center gap-2 text-[#3b252c]/70">
+                  <HiOutlineMail className="text-[#8f6593]" /> Communication:
                 </span>
-                <span className="font-semibold text-gray-800">English &amp; Bengali</span>
+                <span className="font-bold text-[#3b252c]">English &amp; Bengali</span>
               </div>
             </div>
 
             {/* Micro Stats */}
-            <div className="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-gray-100 text-center">
-              <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-blue-600">3+</span>
-                <span className="text-[11px] text-gray-500 font-medium">Demo Projects</span>
+            <div className="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-[#e3e4db] text-center">
+              <div className="p-2.5 bg-[#fafaf8] rounded-xl border border-[#e3e4db]">
+                <span className="block text-2xl font-black text-[#8f6593]">3+</span>
+                <span className="text-[11px] text-[#3b252c]/70 font-semibold">Demo Projects</span>
               </div>
-              <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-indigo-600">500+</span>
-                <span className="text-[11px] text-gray-500 font-medium">Coding Hours</span>
+              <div className="p-2.5 bg-[#fafaf8] rounded-xl border border-[#e3e4db]">
+                <span className="block text-2xl font-black text-[#3b252c]">500+</span>
+                <span className="text-[11px] text-[#3b252c]/70 font-semibold">Coding Hours</span>
               </div>
-              <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-emerald-600">100%</span>
-                <span className="text-[11px] text-gray-500 font-medium">Commitment</span>
+              <div className="p-2.5 bg-[#fafaf8] rounded-xl border border-[#e3e4db]">
+                <span className="block text-2xl font-black text-[#8f6593]">100%</span>
+                <span className="text-[11px] text-[#3b252c]/70 font-semibold">Commitment</span>
               </div>
             </div>
           </div>
@@ -117,12 +118,12 @@ const AboutMe = () => {
 
         {/* Right Column: Bio Narrative & Strengths */}
         <div className="lg:col-span-7 space-y-6">
-          <div className="space-y-4 text-gray-600 leading-relaxed text-base sm:text-lg">
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight leading-snug">
+          <div className="space-y-4 text-[#3b252c]/85 leading-relaxed text-base sm:text-lg">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#3b252c] tracking-tight leading-snug">
               Turning complex design ideas into seamless, interactive web experiences.
             </h3>
             <p>
-              I am an aspiring and self-driven <strong>Fresher Web Developer</strong> with a solid academic foundation in Computer Science and an intense passion for modern frontend technologies. My journey began with experimenting with basic HTML &amp; CSS, which quickly evolved into building dynamic, full-fledged Single Page Applications with <strong>React.js</strong> and <strong>Tailwind CSS</strong>.
+              I am an aspiring and self-driven <strong className="text-[#3b252c]">Fresher Web Developer</strong> with a solid academic foundation in Computer Science and an intense passion for modern frontend technologies. My journey began with experimenting with basic HTML &amp; CSS, which quickly evolved into building dynamic, full-fledged Single Page Applications with <strong className="text-[#8f6593]">React.js</strong> and <strong className="text-[#3b252c]">Tailwind CSS</strong>.
             </p>
             <p>
               As a fresher, I bring raw enthusiasm, fresh perspective, and a relentless drive to master modern tools. I place high value on writing clean, accessible, and maintainable code. I am eager to contribute to collaborative engineering teams where I can learn from senior developers and deliver immediate value.
@@ -134,12 +135,12 @@ const AboutMe = () => {
             {highlights.map((item) => (
               <div
                 key={item.title}
-                className="p-4 rounded-xl bg-white border border-gray-200/80 shadow-xs flex items-start gap-3"
+                className="p-4 rounded-xl bg-white border border-[#e3e4db] shadow-xs flex items-start gap-3 hover:border-[#8f6593] hover:shadow-md transition"
               >
-                <HiOutlineCheckCircle className="text-xl text-blue-600 shrink-0 mt-0.5" />
+                <HiOutlineCheckCircle className="text-xl text-[#8f6593] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-sm font-bold text-gray-900">{item.title}</h4>
-                  <p className="text-xs text-gray-500 mt-1 leading-normal">{item.desc}</p>
+                  <h4 className="text-sm font-bold text-[#3b252c]">{item.title}</h4>
+                  <p className="text-xs text-[#3b252c]/70 mt-1 leading-normal">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -149,17 +150,17 @@ const AboutMe = () => {
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <Link
               to="/resume"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md shadow-blue-500/20 transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-[#8f6593] hover:bg-[#774e7c] text-white px-6 py-3 rounded-xl font-bold shadow-md shadow-[#8f6593]/25 hover:shadow-lg transition-all duration-300 border border-[#8f6593]"
             >
-              <HiOutlineSparkles className="text-lg" />
+              <HiOutlineSparkles className="text-lg text-white" />
               <span>Inspect Full Resume</span>
             </Link>
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-white text-gray-700 border border-gray-300 hover:border-blue-500 hover:text-blue-600 px-6 py-3 rounded-xl font-semibold shadow-xs transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-white hover:bg-[#3b252c] text-[#3b252c] hover:text-white border-2 border-[#3b252c] px-6 py-3 rounded-xl font-bold shadow-xs hover:shadow-lg transition-all duration-300"
             >
-              <FaRocket className="text-sm" />
+              <FaRocket className="text-sm text-[#8f6593] group-hover:text-white" />
               <span>Let's Work Together</span>
             </a>
           </div>

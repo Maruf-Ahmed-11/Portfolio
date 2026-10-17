@@ -10,14 +10,14 @@ const ProjectDetails = () => {
   if (!project) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center px-6">
-        <div className="text-center max-w-md bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Project Not Found</h2>
-          <p className="text-gray-600 text-sm mb-6">
+        <div className="text-center max-w-md bg-white p-8 rounded-2xl shadow-xl border border-[#e3e4db]">
+          <h2 className="text-2xl font-bold text-[#3b252c] mb-2">Project Not Found</h2>
+          <p className="text-[#3b252c]/70 text-sm mb-6">
             The project you are looking for does not exist or has been moved.
           </p>
           <Link
             to="/#projects"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-semibold transition"
+            className="inline-flex items-center gap-2 bg-[#8f6593] hover:bg-[#774e7c] text-white px-5 py-2.5 rounded-xl font-bold transition border border-[#8f6593] shadow-md shadow-[#8f6593]/20"
           >
             <HiArrowLeft /> Back to Projects
           </Link>
@@ -27,23 +27,23 @@ const ProjectDetails = () => {
   }
 
   return (
-    <main className="min-h-screen pt-28 pb-20 bg-gray-50/60 text-gray-800">
+    <main className="min-h-screen pt-28 pb-20 bg-[#fafaf8] text-[#3b252c]">
       <div className="max-w-4xl mx-auto px-6">
         {/* Navigation Breadcrumb */}
         <div className="mb-6">
           <Link
             to="/#projects"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-blue-600 transition"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#8f6593] hover:text-[#3b252c] transition"
           >
             <HiArrowLeft /> Back to All Projects
           </Link>
         </div>
 
         {/* Project Card */}
-        <div className="bg-white rounded-2xl border border-gray-200/90 shadow-sm overflow-hidden p-6 sm:p-10 space-y-8">
+        <div className="bg-white rounded-2xl border border-[#e3e4db] shadow-xl overflow-hidden p-6 sm:p-10 space-y-8">
           
           {/* Main Screenshot */}
-          <div className="rounded-xl overflow-hidden border border-gray-200/80 shadow-md aspect-video bg-gray-100">
+          <div className="rounded-xl overflow-hidden border border-[#e3e4db] shadow-md aspect-video bg-[#fafaf8]">
             <img
               src={project.image}
               alt={project.title}
@@ -54,25 +54,25 @@ const ProjectDetails = () => {
           {/* Title & Category */}
           <div className="space-y-3">
             {project.category && (
-              <span className="inline-block bg-blue-50 text-blue-700 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">
+              <span className="inline-block bg-[#8f6593]/10 text-[#8f6593] border border-[#8f6593]/30 text-xs font-bold px-3 py-1 rounded-full">
                 {project.category}
               </span>
             )}
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#3b252c] tracking-tight">
               {project.title}
             </h1>
           </div>
 
           {/* Tech Stack Pills */}
           <div>
-            <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
-              <HiCode className="text-blue-600 text-base" /> Technologies Used
+            <h3 className="text-xs font-bold text-[#3b252c]/65 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+              <HiCode className="text-[#8f6593] text-base" /> Technologies Used
             </h3>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-blue-50 text-blue-800 border border-blue-100 px-3 py-1 rounded-lg text-xs font-semibold"
+                  className="bg-[#fafaf8] text-[#3b252c] border border-[#e3e4db] px-3 py-1 rounded-lg text-xs font-semibold"
                 >
                   {tech}
                 </span>
@@ -82,20 +82,20 @@ const ProjectDetails = () => {
 
           {/* Description */}
           <div className="space-y-2">
-            <h3 className="text-lg font-bold text-gray-900">Project Overview</h3>
-            <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+            <h3 className="text-lg font-bold text-[#3b252c]">Project Overview</h3>
+            <p className="text-[#3b252c]/80 leading-relaxed text-sm sm:text-base">
               {project.description}
             </p>
           </div>
 
           {/* Challenges & Solutions */}
           {project.challenges && project.challenges.length > 0 && (
-            <div className="space-y-3 p-5 rounded-xl bg-gray-50 border border-gray-100">
-              <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
-                <HiShieldCheck className="text-emerald-600 text-lg" />
+            <div className="space-y-3 p-5 rounded-xl bg-[#fafaf8] border border-[#e3e4db]">
+              <h3 className="text-base font-bold text-[#3b252c] flex items-center gap-2">
+                <HiShieldCheck className="text-[#8f6593] text-lg" />
                 Technical Challenges &amp; Solutions
               </h3>
-              <ul className="list-disc list-inside space-y-1.5 text-sm text-gray-700">
+              <ul className="list-disc list-inside space-y-1.5 text-sm text-[#3b252c]/80">
                 {project.challenges.map((challenge) => (
                   <li key={challenge}>{challenge}</li>
                 ))}
@@ -105,12 +105,12 @@ const ProjectDetails = () => {
 
           {/* Future Enhancements */}
           {project.future && project.future.length > 0 && (
-            <div className="space-y-3 p-5 rounded-xl bg-blue-50/50 border border-blue-100">
-              <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
-                <HiLightBulb className="text-amber-500 text-lg" />
+            <div className="space-y-3 p-5 rounded-xl bg-[#f4f4f0] border border-[#cdcdcd]">
+              <h3 className="text-base font-bold text-[#3b252c] flex items-center gap-2">
+                <HiLightBulb className="text-[#8f6593] text-lg" />
                 Future Roadmap &amp; Enhancements
               </h3>
-              <ul className="list-disc list-inside space-y-1.5 text-sm text-gray-700">
+              <ul className="list-disc list-inside space-y-1.5 text-sm text-[#3b252c]/80">
                 {project.future.map((enhancement) => (
                   <li key={enhancement}>{enhancement}</li>
                 ))}
@@ -119,13 +119,13 @@ const ProjectDetails = () => {
           )}
 
           {/* Action Links */}
-          <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center gap-4">
+          <div className="pt-4 border-t border-[#e3e4db] flex flex-wrap items-center gap-4">
             {project.live && (
               <a
                 href={project.live}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-sm hover:shadow transition"
+                className="inline-flex items-center gap-2 bg-[#8f6593] hover:bg-[#774e7c] text-white px-6 py-3 rounded-xl font-bold shadow-md shadow-[#8f6593]/25 hover:shadow-lg transition border border-[#8f6593]"
               >
                 <span>Live Demo</span>
                 <HiExternalLink className="text-base" />
@@ -137,7 +137,7 @@ const ProjectDetails = () => {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 bg-gray-900 hover:bg-black text-white px-6 py-3 rounded-xl font-semibold shadow-sm hover:shadow transition"
+                className="inline-flex items-center gap-2 bg-white hover:bg-[#3b252c] text-[#3b252c] hover:text-white border-2 border-[#3b252c] px-6 py-3 rounded-xl font-bold shadow-xs hover:shadow-lg transition"
               >
                 <FaGithub className="text-lg" />
                 <span>Source Code</span>
@@ -146,7 +146,7 @@ const ProjectDetails = () => {
 
             <Link
               to="/resume"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:underline ml-auto"
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-[#8f6593] hover:text-[#3b252c] hover:underline ml-auto"
             >
               View Developer Resume &rarr;
             </Link>

@@ -191,30 +191,30 @@ const Skills = () => {
     <section id="skills" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-          <HiOutlineCode className="text-blue-600 text-sm" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e3e4db] text-[#3b252c] text-xs font-bold uppercase tracking-wider shadow-xs">
+          <HiOutlineCode className="text-[#8f6593] text-sm" />
           <span>Technical Arsenal</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Skills</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#3b252c] tracking-tight">
+          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f6593] via-[#a372a8] to-[#3b252c]">Skills</span>
         </h2>
 
-        <p className="text-base sm:text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-[#3b252c]/80">
           The technologies, libraries, and developer tools I leverage to build fast, responsive, and delightful web applications.
         </p>
       </div>
 
-      {/* Filter Tabs */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+      {/* Filter Tabs (Distinct High-Contrast Toggle Buttons) */}
+      <div className="flex flex-wrap items-center justify-center gap-2.5 mb-12">
         {categories.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setActiveTab(cat.id)}
-            className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 cursor-pointer ${
+            className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-300 cursor-pointer ${
               activeTab === cat.id
-                ? "bg-blue-600 text-white shadow-md shadow-blue-500/25 scale-105"
-                : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-600 hover:bg-gray-50"
+                ? "bg-[#3b252c] text-white shadow-md border-2 border-[#3b252c] scale-105"
+                : "bg-white text-[#3b252c] border-2 border-[#e3e4db] hover:border-[#3b252c] hover:bg-[#f4f4f0]"
             }`}
           >
             {cat.name}
@@ -229,42 +229,40 @@ const Skills = () => {
           return (
             <div
               key={skill.name}
-              className="bg-white rounded-2xl border border-gray-200/80 p-5 shadow-xs hover:shadow-lg hover:border-blue-300 transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white rounded-2xl border border-[#e3e4db] p-5 shadow-xs hover:shadow-xl hover:shadow-[#3b252c]/8 hover:border-[#8f6593] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center border text-2xl ${skill.bg} ${skill.color} group-hover:scale-110 transition-transform`}
-                  >
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center border text-2xl bg-[#fafaf8] border-[#e3e4db] text-[#8f6593] group-hover:scale-110 group-hover:bg-[#8f6593] group-hover:text-white group-hover:border-[#8f6593] transition-all shadow-xs">
                     <Icon />
                   </div>
 
                   <span
-                    className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${
+                    className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${
                       skill.level === "Advanced"
-                        ? "bg-emerald-50 text-emerald-700 border-emerald-200"
+                        ? "bg-[#8f6593]/10 text-[#8f6593] border-[#8f6593]/30"
                         : skill.level === "Proficient"
-                        ? "bg-blue-50 text-blue-700 border-blue-200"
-                        : "bg-purple-50 text-purple-700 border-purple-200"
+                        ? "bg-[#3b252c]/10 text-[#3b252c] border-[#3b252c]/20"
+                        : "bg-[#aea4bf]/20 text-[#3b252c] border-[#aea4bf]/40"
                     }`}
                   >
                     {skill.level}
                   </span>
                 </div>
 
-                <h3 className="font-bold text-gray-900 text-base mb-1 group-hover:text-blue-600 transition-colors">
+                <h3 className="font-bold text-[#3b252c] text-base mb-1 group-hover:text-[#8f6593] transition-colors">
                   {skill.name}
                 </h3>
 
-                <p className="text-xs text-gray-500 leading-relaxed">
+                <p className="text-xs text-[#3b252c]/75 leading-relaxed">
                   {skill.description}
                 </p>
               </div>
 
               {/* Progress Indicator */}
-              <div className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                <span className="text-[11px] text-gray-400 font-medium capitalize">
+              <div className="mt-4 pt-3 border-t border-[#e3e4db] flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#8f6593] shadow-[0_0_6px_#8f6593]"></span>
+                <span className="text-[11px] text-[#3b252c]/60 font-semibold capitalize">
                   {skill.category}
                 </span>
               </div>

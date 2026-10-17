@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+
+  /* The 5 Palette Colors from the DesignAcademy Reference */
+  --color-sand-bone: #e3e4db;
+  --color-sand-light: #fafaf8;
+  --color-sand-surface: #f4f4f0;
+  --color-silver-fog: #cdcdcd;
+  --color-lilac-mist: #aea4bf;
+  --color-plum-mauve: #8f6593;
+  --color-plum-hover: #774e7c;
+  --color-plum-dark: #623e66;
+  --color-espresso-charcoal: #3b252c;
+  --color-espresso-hover: #27171d;
+}
+
+/* Custom Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #aea4bf;
+  border-radius: 4px;
+  border: 1px solid #e3e4db;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8f6593;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #fafaf8;
+  color: #3b252c;
+  color-scheme: light;
+}
+
