@@ -9,20 +9,19 @@ import { FaGraduationCap, FaCertificate } from "react-icons/fa";
 
 const educationHistory = [
   {
-    degree: "B.Sc. in Computer Science & Engineering (CSE)",
-    institution: "Your University / College Name",
-    location: "Dhaka, Bangladesh",
-    period: "2022 – 2026 (Expected)",
-    grade: "CGPA: 3.50+ / 4.00",
+    degree: "2nd Year Undergraduate, Marketing",
+    institution: "Govt. BL College",
+    location: "Khulna, Bangladesh",
+    period: "2025– Present",
     description:
-      "Gained comprehensive theoretical and practical knowledge in computational thinking, software engineering, and web technologies.",
+      "Currently pursuing an undergraduate degree in Marketing while rigorously training as a full-stack web developer to build modern, user-centric digital products.",
     coursework: [
-      "Data Structures & Algorithms",
-      "Object-Oriented Programming (Java/C++)",
-      "Database Management Systems (DBMS)",
-      "Web Technologies & Engineering",
-      "Operating Systems & Computer Networks",
-      "Software Design Patterns",
+      "Principles of Marketing",
+      "Consumer Behavior",
+      "Market Research & Analysis",
+      "Brand Management",
+      "Digital Marketing Strategies",
+      "Business Communication",
     ],
   },
   {
@@ -86,7 +85,7 @@ const Education = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-zinc-400">
-          My educational journey and professional credentials that built my foundational computer science and engineering mindset.
+          My educational background and academic journey combining business acumen with modern full-stack engineering.
         </p>
       </div>
 
@@ -127,9 +126,11 @@ const Education = () => {
                     </div>
                   </div>
 
-                  <span className="inline-block bg-purple-950/60 text-purple-300 border border-purple-500/40 text-xs font-bold px-3 py-1 rounded-full shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.2)]">
-                    {edu.grade}
-                  </span>
+                  {edu.grade && (
+                    <span className="inline-block bg-purple-950/60 text-purple-300 border border-purple-500/40 text-xs font-bold px-3 py-1 rounded-full shrink-0 shadow-[0_0_10px_rgba(168,85,247,0.2)]">
+                      {edu.grade}
+                    </span>
+                  )}
                 </div>
 
                 <p className="text-sm text-zinc-400 leading-relaxed mb-4">

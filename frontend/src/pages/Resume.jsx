@@ -296,19 +296,18 @@ const Resume = () => {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm">
               <div>
                 <h3 className="font-bold text-white print:text-gray-900">
-                  B.Sc. in Computer Science &amp; Engineering (CSE)
+                  2nd Year Undergraduate, Marketing
                 </h3>
                 <p className="text-zinc-400 print:text-gray-600 text-xs sm:text-sm">
-                  Dhaka, Bangladesh
+                  Govt. BL College, Khulna, Bangladesh
                 </p>
               </div>
               <div className="text-xs sm:text-sm text-zinc-400 print:text-gray-500 font-medium mt-1 sm:mt-0 sm:text-right">
-                <span>Graduation Year: 2025 / 2026</span>
-                <span className="block text-purple-400 print:text-blue-600 font-bold">CGPA: 3.50+ / 4.00</span>
+                <span>2025– Present</span>
               </div>
             </div>
             <p className="text-xs text-zinc-400 print:text-gray-600">
-              <strong className="font-bold text-zinc-300 print:text-gray-700">Relevant Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Web Engineering, Software Architecture.
+              <strong className="font-bold text-zinc-300 print:text-gray-700">Relevant Coursework:</strong> Principles of Marketing, Consumer Behavior, Market Research &amp; Analysis, Brand Management, Digital Marketing Strategies, Business Communication.
             </p>
           </div>
         </section>
