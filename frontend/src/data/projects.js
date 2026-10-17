@@ -1,13 +1,13 @@
-import project1 from "../assets/projects/project1.png";
-import project2 from "../assets/projects/project2.png";
-import project3 from "../assets/projects/project3.svg";
+import portfolioImg from "../assets/projects/portfolio.png";
+import bazarDorImg from "../assets/projects/bazar-dor.png";
+import fitlogImg from "../assets/projects/fitlog.png";
 
 const projects = [
   {
     id: 1,
-    title: "Developer Portfolio & Showcase",
-    image: project1,
-    category: "Frontend Web Application",
+    title: "Developer Portfolio & Personal Showcase",
+    image: portfolioImg,
+    category: "Frontend & UI/UX Engineering",
     technologies: [
       "React",
       "Tailwind CSS",
@@ -16,71 +16,76 @@ const projects = [
       "Vite"
     ],
     description:
-      "A modern, high-performance personal portfolio built for showcasing frontend engineering skills, interactive projects, and a responsive resume viewer. Features smooth section navigation, responsive mobile menu, dynamic routing, and ATS-friendly printable resume.",
-    live: "https://example.com/portfolio-demo",
+      "A modern, high-performance personal portfolio built for showcasing frontend engineering skills, interactive projects, academic background, and an ATS-friendly printable resume viewer. Features responsive navigation, vibrant glassmorphism design, and rich micro-interactions.",
+    live: "https://github.com/Maruf-Ahmed-11/Portfolio",
     github: "https://github.com/Maruf-Ahmed-11/Portfolio",
     challenges: [
-      "Building a smooth active-section scroll spy with route-aware navigation",
-      "Crafting an ATS-compatible, print-optimized resume stylesheet in React",
+      "Building a smooth active-section scroll spy with route-aware navigation across all pages",
+      "Crafting an ATS-compatible, print-optimized resume view with zero dependency bloat",
       "Ensuring fluid responsiveness across ultra-wide monitors down to small mobile viewports"
     ],
     future: [
-      "Dark / Light theme mode toggle with localStorage persistence",
       "Interactive contact form integration via EmailJS / Web3Forms",
-      "Markdown-powered tech blog section with syntax highlighting"
+      "Markdown-powered tech blog section with syntax highlighting",
+      "Multi-language locale toggle with persistent user preferences"
     ],
   },
   {
     id: 2,
-    title: "TechGear - Modern Tech Store",
-    image: project2,
-    category: "E-Commerce Web App",
+    title: "Bazar Dor – Daily Commodity Price Tracker",
+    image: bazarDorImg,
+    category: "Full-Stack Web App with Auth",
     technologies: [
       "React",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript",
-      "Context API",
-      "REST API"
+      "DaisyUI",
+      "MongoDB",
+      "Better-Auth",
+      "Custom API"
     ],
     description:
-      "A responsive, full-featured electronics and tech gadgets web application. Includes instant product category filtering, price range slider, real-time shopping cart drawer with quantity adjustments, and simulated checkout flow.",
-    live: "https://example.com/techgear-demo",
-    github: "https://github.com/example/techgear-ecommerce",
+      "A modern, responsive web application designed to track the daily market prices of essential commodities in Bangladesh. Stay updated with the latest price trends, market-specific rates, and price fluctuations for everyday items like rice, vegetables, meat, and spices.",
+    live: "https://a07-bazar-dor-flax.vercel.app",
+    github: "https://github.com/Maruf-Ahmed-11/A07-Bazar-Dor",
     challenges: [
-      "Global cart state management with React Context without unnecessary re-renders",
-      "Smooth slide-over modal drawer implementation for cart and mobile filters",
-      "Instant multi-criteria client-side search and category filtering"
+      "Live Price Tracking & Trends: Real-time visual percentage indicators showing price increases, decreases, or flat rates compared to previous days",
+      "Dynamic Product Pages: Detailed views for individual items featuring minimum, maximum, and average price calculations across regional markets",
+      "Category Sorting Controls: Effortlessly filter and sort commodities by default, price low-to-high, and price high-to-low"
     ],
     future: [
-      "Integration with Stripe payment gateway test API",
-      "User authentication and order history dashboard",
-      "Wishlist system with localStorage persistence"
+      "Secure Social Authentication: Multi-provider login (Google, GitHub, email/password) with duplicate account conflict prevention",
+      "Personalized User Profiles: Protected dashboard to manage user details with dynamic avatar synchronization",
+      "Crowdsourced Community Price Reporting: Localized daily submission for neighborhood bazaar price verification"
     ],
   },
   {
     id: 3,
-    title: "TaskFlow - Agile Kanban Board",
-    image: project3,
-    category: "Productivity & SaaS",
+    title: "FitLog – Focused Gym Companion & Planner",
+    image: fitlogImg,
+    category: "Health & Fitness Web App",
     technologies: [
+      "Next.js",
       "React",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript (ES6+)",
-      "LocalStorage"
+      "Context API",
+      "Fetch API"
     ],
     description:
-      "An intuitive task management and productivity dashboard inspired by Trello and Jira. Supports custom task creation, priority color-coding, multi-stage workflow columns (Backlog, In Progress, Completed), and search indexing.",
-    live: "https://example.com/taskflow-demo",
-    github: "https://github.com/example/taskflow-kanban",
+      "FitLog is a dark, no-nonsense gym companion built for focused training. It allows users to browse a comprehensive library of exercises, view detailed technical specifications for each movement, and seamlessly organize their routines by locking lifts into a daily plan or saving them for later.",
+    live: "https://fitlog-app-a6-bice.vercel.app",
+    github: "https://github.com/Maruf-Ahmed-11/fitlog-app-a6",
     challenges: [
-      "Seamless task state transitions across columns with proper data immutability",
-      "Persistent state synchronization with browser LocalStorage",
-      "Clean UI component design adhering to accessibility standards"
+      "Responsive Workout Library: Dynamic mobile-friendly grid displaying workouts fetched from an external API with category tags and key metrics",
+      "Interactive Planning System: Seamlessly add workouts to 'Today's Plan' or 'Save for Later', with instant live navbar counter updates via Context API",
+      "Dynamic Routing & Details: Dedicated dynamically generated exercise pages featuring high-quality imagery, step-by-step instructions, and difficulty specs"
     ],
     future: [
-      "Drag and drop reordering using @dnd-kit/core",
-      "Firebase Firestore integration for multi-device real-time sync",
-      "Subtasks checklist and due-date notification system"
+      "Live Metrics Dashboard: Automated calculations for total exercises, combined duration, and total calories burned based on user selections",
+      "Advanced Sorting & Management: Custom dropdown sorting by Duration, Calories, or Rating with one-click actions to mark workouts as done or remove them",
+      "Workout History & Streak Tracker: Long-term analytics and personal record logging"
     ],
   },
 ];

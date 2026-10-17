@@ -182,9 +182,9 @@ const Resume = () => {
             <div className="border-l-2 border-purple-500 print:border-blue-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-white print:text-gray-900 flex items-center gap-2">
-                  Developer Portfolio &amp; Interactive Showcase
+                  Developer Portfolio &amp; Personal Showcase
                   <span className="text-xs font-semibold text-purple-300 print:text-blue-600 font-mono bg-purple-950/60 print:bg-blue-50 border border-purple-500/30 print:border-none px-2 py-0.5 rounded">
-                    Personal Project
+                    Frontend &amp; UI/UX Project
                   </span>
                 </h3>
                 <div className="flex items-center gap-3 text-xs font-bold text-purple-400 print:text-blue-600">
@@ -192,13 +192,13 @@ const Resume = () => {
                     Live View <HiExternalLink />
                   </a>
                   <span>•</span>
-                  <a href="https://github.com/Maruf-Ahmed-11" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                  <a href="https://github.com/Maruf-Ahmed-11/Portfolio" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
                     GitHub Code <HiExternalLink />
                   </a>
                 </div>
               </div>
               <p className="text-xs text-zinc-400 print:text-gray-500 font-medium mt-0.5">
-                Tech Stack: React.js, Tailwind CSS, React Router, Vite
+                Tech Stack: React.js, Tailwind CSS, JavaScript (ES6+), React Router, Vite
               </p>
               <ul className="mt-2 list-disc list-inside text-xs sm:text-sm text-zinc-300 print:text-gray-700 space-y-1">
                 <li>
@@ -208,7 +208,7 @@ const Resume = () => {
                   Built dynamic routing for individual project deep-dives and an ATS-friendly printable resume view with zero dependency bloat.
                 </li>
                 <li>
-                  Achieved high lighthouse performance scores through modern utility-first CSS and optimized asset bundling.
+                  Implemented rich glassmorphic aesthetic with custom purple gradient theme, dynamic floating badge animations, and responsive layouts.
                 </li>
               </ul>
             </div>
@@ -217,33 +217,33 @@ const Resume = () => {
             <div className="border-l-2 border-fuchsia-500 print:border-indigo-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-white print:text-gray-900 flex items-center gap-2">
-                  TechGear - Modern E-Commerce Platform
+                  Bazar Dor – Daily Commodity Price Tracker
                   <span className="text-xs font-semibold text-fuchsia-300 print:text-indigo-600 font-mono bg-fuchsia-950/60 print:bg-indigo-50 border border-fuchsia-500/30 print:border-none px-2 py-0.5 rounded">
-                    Frontend &amp; State Project
+                    Full-Stack &amp; Auth Project
                   </span>
                 </h3>
                 <div className="flex items-center gap-3 text-xs font-bold text-fuchsia-400 print:text-indigo-600">
-                  <a href="https://example.com" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                  <a href="https://a07-bazar-dor-flax.vercel.app" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
                     Live Demo <HiExternalLink />
                   </a>
                   <span>•</span>
-                  <a href="https://github.com/Maruf-Ahmed-11" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                  <a href="https://github.com/Maruf-Ahmed-11/A07-Bazar-Dor" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
                     GitHub Code <HiExternalLink />
                   </a>
                 </div>
               </div>
               <p className="text-xs text-zinc-400 print:text-gray-500 font-medium mt-0.5">
-                Tech Stack: React.js, Tailwind CSS, Context API, REST API
+                Tech Stack: Next.js, React, TypeScript, Tailwind CSS, DaisyUI, MongoDB, Better-Auth
               </p>
               <ul className="mt-2 list-disc list-inside text-xs sm:text-sm text-zinc-300 print:text-gray-700 space-y-1">
                 <li>
-                  Architected a complete online catalog with live search, dynamic category filtering, and real-time price slider.
+                  Engineered a daily commodity price tracker for Bangladesh markets featuring real-time fluctuation indicators and percentage changes.
                 </li>
                 <li>
-                  Engineered global cart state management with React Context and localStorage persistence for persistent shopping sessions.
+                  Implemented secure multi-provider authentication (Google, GitHub, email/password) via Better-Auth with duplicate account conflict resolution.
                 </li>
                 <li>
-                  Designed a smooth slide-over cart drawer with instant quantity calculations and simulated checkout flow.
+                  Built dynamic product catalog pages calculating minimum, maximum, and average rates across regional markets with multi-parameter sorting.
                 </li>
               </ul>
             </div>
@@ -252,33 +252,33 @@ const Resume = () => {
             <div className="border-l-2 border-cyan-500 print:border-emerald-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-white print:text-gray-900 flex items-center gap-2">
-                  TaskFlow - Agile Kanban Productivity App
+                  FitLog – Focused Gym Companion &amp; Planner
                   <span className="text-xs font-semibold text-cyan-300 print:text-emerald-600 font-mono bg-cyan-950/60 print:bg-emerald-50 border border-cyan-500/30 print:border-none px-2 py-0.5 rounded">
-                    Web Application
+                    Health &amp; Fitness Web App
                   </span>
                 </h3>
                 <div className="flex items-center gap-3 text-xs font-bold text-cyan-400 print:text-emerald-600">
-                  <a href="https://example.com" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                  <a href="https://fitlog-app-a6-bice.vercel.app" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
                     Live Demo <HiExternalLink />
                   </a>
                   <span>•</span>
-                  <a href="https://github.com/Maruf-Ahmed-11" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                  <a href="https://github.com/Maruf-Ahmed-11/fitlog-app-a6" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
                     GitHub Code <HiExternalLink />
                   </a>
                 </div>
               </div>
               <p className="text-xs text-zinc-400 print:text-gray-500 font-medium mt-0.5">
-                Tech Stack: React.js, Tailwind CSS, JavaScript (ES6+), LocalStorage
+                Tech Stack: Next.js, React, TypeScript, Tailwind CSS, React Context API, Fetch API
               </p>
               <ul className="mt-2 list-disc list-inside text-xs sm:text-sm text-zinc-300 print:text-gray-700 space-y-1">
                 <li>
-                  Created an interactive task management board with multi-column status tracking (Backlog, In Progress, Completed).
+                  Built a focused workout tracker allowing users to browse exercise libraries, view technical specifications, and manage daily training splits.
                 </li>
                 <li>
-                  Implemented custom priority flags, title/description validation, and instant search filter.
+                  Architected global state management with Context API to dynamically synchronize &quot;Today&apos;s Plan&quot;, &quot;Save for Later&quot;, and live navbar badge counters.
                 </li>
                 <li>
-                  Employed clean modular component structure with reusable modal and card subcomponents.
+                  Developed an active metrics dashboard calculating combined workout duration and estimated calorie burn with custom sorting by Duration, Calories, or Rating.
                 </li>
               </ul>
             </div>
