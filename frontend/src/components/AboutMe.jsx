@@ -47,8 +47,7 @@ const AboutMe = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-zinc-400">
-          A glimpse into my journey, core values, and dedication as a passionate full stack web developer.
-        </p>
+          A developer dedicated to engineering modern, responsive, and human-friendly web applications with clean code and high attention to detail.        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -72,7 +71,7 @@ const AboutMe = () => {
                 <p className="text-sm font-semibold text-purple-400">Full Stack Developer</p>
                 <div className="flex items-center gap-1.5 text-xs text-zinc-400 mt-1">
                   <HiOutlineLocationMarker className="text-purple-400" />
-                  <span>Dhaka, Bangladesh</span>
+                  <span>Khulna, Bangladesh</span>
                 </div>
               </div>
             </div>
@@ -126,7 +125,7 @@ const AboutMe = () => {
               Turning complex design ideas into seamless, interactive web experiences.
             </h3>
             <p>
-              I am a dedicated <strong className="text-purple-300">Full Stack Developer</strong> with a solid academic foundation in Computer Science and an intense passion for modern web technologies. My journey began with experimenting with basic web design, which quickly evolved into building dynamic, high-performance Single Page Applications with <strong className="text-purple-400">React.js</strong>, <strong className="text-fuchsia-400">Next.js</strong>, and <strong className="text-cyan-400">Tailwind CSS</strong>.
+              I am a dedicated <strong className="text-purple-300">Full Stack Developer</strong> with a solid academic foundation in Marketing and an intense passion for modern web technologies. My journey began with experimenting with basic web design, which quickly evolved into building dynamic, high-performance Single Page Applications with <strong className="text-purple-400">React.js</strong>, <strong className="text-fuchsia-400">Next.js</strong>, and <strong className="text-cyan-400">Tailwind CSS</strong>.
             </p>
             <p>
               I place high value on writing clean, accessible, and maintainable code. Whether crafting responsive user interfaces or integrating robust backend services with Node.js and MongoDB, I am eager to deliver immediate value and build delightful user experiences.

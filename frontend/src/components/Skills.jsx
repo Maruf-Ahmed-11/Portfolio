@@ -8,16 +8,18 @@ import {
   FaGitAlt,
   FaNpm,
   FaChrome,
+  FaWindows,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiBootstrap,
   SiMongodb,
-  SiFirebase,
-  SiVite,
-  SiPostman,
   SiVercel,
+  SiNextdotjs,
+  SiTypescript,
+  SiFigma,
+  SiNotion,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 import { HiOutlineCode, HiOutlineServer, HiOutlineTerminal } from "react-icons/hi";
 
 const categories = [
@@ -28,40 +30,25 @@ const categories = [
 ];
 
 const skillsData = [
-  // Frontend
-  {
-    name: "React.js",
-    category: "frontend",
-    icon: FaReact,
-    color: "text-cyan-500",
-    bg: "bg-cyan-50 border-cyan-100",
-    level: "Proficient",
-    description: "Hooks, Router, Context API, Component Lifecycle",
-  },
+  // Languages & Core Frontend
   {
     name: "JavaScript (ES6+)",
     category: "frontend",
     icon: FaJsSquare,
-    color: "text-yellow-500",
-    bg: "bg-yellow-50 border-yellow-100",
     level: "Proficient",
     description: "Async/Await, DOM manipulation, Array methods, ES6 Modules",
   },
   {
-    name: "Tailwind CSS",
+    name: "TypeScript",
     category: "frontend",
-    icon: SiTailwindcss,
-    color: "text-teal-500",
-    bg: "bg-teal-50 border-teal-100",
+    icon: SiTypescript,
     level: "Proficient",
-    description: "Utility classes, Flex/Grid layouts, Dark mode, Custom themes",
+    description: "Type safety, Interfaces, Generics, Component props typing",
   },
   {
     name: "HTML5 & Semantic Markup",
     category: "frontend",
     icon: FaHtml5,
-    color: "text-orange-500",
-    bg: "bg-orange-50 border-orange-100",
     level: "Advanced",
     description: "Semantic elements, SEO optimization, Forms & Accessibility",
   },
@@ -69,102 +56,86 @@ const skillsData = [
     name: "CSS3 & Modern Layouts",
     category: "frontend",
     icon: FaCss3Alt,
-    color: "text-blue-500",
-    bg: "bg-blue-50 border-blue-100",
     level: "Advanced",
     description: "Flexbox, CSS Grid, Transitions, Keyframe Animations",
   },
+
+  // Frameworks & Libraries
   {
-    name: "Bootstrap 5",
+    name: "React.js",
     category: "frontend",
-    icon: SiBootstrap,
-    color: "text-purple-500",
-    bg: "bg-purple-50 border-purple-100",
-    level: "Comfortable",
-    description: "Responsive grid, Utility classes, Modal dialogs",
+    icon: FaReact,
+    level: "Proficient",
+    description: "Hooks, Router, Context API, Component Lifecycle, State",
+  },
+  {
+    name: "Next.js",
+    category: "frontend",
+    icon: SiNextdotjs,
+    level: "Proficient",
+    description: "App Router, Server Components, SSR, Dynamic Routing, API Routes",
+  },
+  {
+    name: "Tailwind CSS",
+    category: "frontend",
+    icon: SiTailwindcss,
+    level: "Proficient",
+    description: "Utility classes, Flex/Grid layouts, Dark mode, Custom themes",
   },
 
-  // Backend & DB
+  // Backend & Database
   {
     name: "Node.js (Basics)",
     category: "backend",
     icon: FaNodeJs,
-    color: "text-emerald-500",
-    bg: "bg-emerald-50 border-emerald-100",
     level: "Familiar",
-    description: "Server architecture, Event loop, NPM packages",
-  },
-  {
-    name: "Express.js (Basics)",
-    category: "backend",
-    icon: HiOutlineServer,
-    color: "text-gray-700",
-    bg: "bg-gray-50 border-gray-200",
-    level: "Familiar",
-    description: "Routing, Middleware, RESTful API endpoints",
+    description: "Server architecture, Event loop, NPM packages, API endpoints",
   },
   {
     name: "MongoDB (CRUD)",
     category: "backend",
     icon: SiMongodb,
-    color: "text-emerald-600",
-    bg: "bg-emerald-50 border-emerald-100",
     level: "Familiar",
-    description: "Collections, Documents, Query filters, Aggregations",
-  },
-  {
-    name: "Firebase",
-    category: "backend",
-    icon: SiFirebase,
-    color: "text-amber-500",
-    bg: "bg-amber-50 border-amber-100",
-    level: "Comfortable",
-    description: "Authentication, Firestore database, Hosting",
+    description: "Collections, Documents, Query filters, Aggregations, CRUD",
   },
 
-  // Tools & Deployment
-  {
-    name: "Git & GitHub",
-    category: "tools",
-    icon: FaGitAlt,
-    color: "text-orange-600",
-    bg: "bg-orange-50 border-orange-100",
-    level: "Proficient",
-    description: "Branching, Pull Requests, Merge conflicts, Versioning",
-  },
-  {
-    name: "Vite",
-    category: "tools",
-    icon: SiVite,
-    color: "text-purple-600",
-    bg: "bg-purple-50 border-purple-100",
-    level: "Proficient",
-    description: "Fast HMR, Bundling, Config plugins, Build optimization",
-  },
-  {
-    name: "Postman",
-    category: "tools",
-    icon: SiPostman,
-    color: "text-orange-500",
-    bg: "bg-orange-50 border-orange-100",
-    level: "Comfortable",
-    description: "API testing, Request payloads, Header inspection",
-  },
+  // Deployment Platform
   {
     name: "Vercel & Netlify",
     category: "tools",
     icon: SiVercel,
-    color: "text-gray-900",
-    bg: "bg-gray-50 border-gray-200",
     level: "Proficient",
-    description: "CI/CD auto-deployments, Custom domains, Environment variables",
+    description: "CI/CD auto-deployments, Custom domains, Preview builds, Environment variables",
+  },
+
+  // Design & Graphics
+  {
+    name: "Figma (UI/UX)",
+    category: "tools",
+    icon: SiFigma,
+    level: "Comfortable",
+    description: "Wireframing, UI prototyping, Inspecting dev specs, Component systems",
+  },
+
+  // Tools & Technologies
+  {
+    name: "Git & GitHub",
+    category: "tools",
+    icon: FaGitAlt,
+    level: "Proficient",
+    description: "Branching, Pull Requests, Merge conflicts, Versioning, Collaboration",
+  },
+  {
+    name: "VS Code",
+    category: "tools",
+    icon: VscVscode,
+    level: "Proficient",
+    description: "Extensions, Debugging, Custom snippets, Keybindings, Integrated terminal",
   },
   {
     name: "Chrome DevTools",
     category: "tools",
     icon: FaChrome,
-    color: "text-blue-500",
-    bg: "bg-blue-50 border-blue-100",
     level: "Proficient",
     description: "DOM Inspection, Network tab, Console debugging, Performance",
   },
@@ -172,10 +143,22 @@ const skillsData = [
     name: "npm & Ecosystem",
     category: "tools",
     icon: FaNpm,
-    color: "text-red-500",
-    bg: "bg-red-50 border-red-100",
     level: "Proficient",
     description: "Package management, Scripts, Dependency resolution",
+  },
+  {
+    name: "Notion",
+    category: "tools",
+    icon: SiNotion,
+    level: "Proficient",
+    description: "Task tracking, Project documentation, Engineering knowledge base",
+  },
+  {
+    name: "Windows Environment",
+    category: "tools",
+    icon: FaWindows,
+    level: "Proficient",
+    description: "PowerShell, Developer CLI, PATH configuration, System tools",
   },
 ];
 

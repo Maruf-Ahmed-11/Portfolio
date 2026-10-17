@@ -134,7 +134,7 @@ const Contact = () => {
                     Location
                   </span>
                   <span className="text-sm font-bold text-white">
-                    Dhaka, Bangladesh (Remote / On-site)
+                    Khulna, Bangladesh (Remote / On-site)
                   </span>
                 </div>
               </div>

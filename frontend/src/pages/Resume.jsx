@@ -83,7 +83,7 @@ const Resume = () => {
             </a>
             <div className="flex items-center gap-1.5">
               <HiLocationMarker className="text-purple-400 print:text-blue-600 text-base shrink-0" />
-              <span>Dhaka, Bangladesh</span>
+              <span>Khulna, Bangladesh</span>
             </div>
             <a
               href="https://github.com/Maruf-Ahmed-11"
