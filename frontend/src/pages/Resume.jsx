@@ -43,7 +43,7 @@ const Resume = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-3xl sm:text-4xl font-extrabold text-white print:text-gray-900 tracking-tight">
-                Fuad Al Maimun
+                Maruf Ahmed Rohan
               </h1>
               <p className="text-lg font-bold text-purple-400 print:text-blue-700 mt-1">
                 Full Stack Developer | React &amp; Next.js Developer
@@ -66,18 +66,20 @@ const Resume = () => {
           {/* Contact Details Bar */}
           <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-xs sm:text-sm text-zinc-300 print:text-gray-600 pt-4 border-t border-purple-500/20 print:border-gray-100">
             <a
-              href="mailto:maruf614maruf614@gmail.com"
+              href="mailto:maruf04ahmed12rohan04@gmail.com"
               className="flex items-center gap-1.5 hover:text-purple-300 print:hover:text-blue-600 transition"
             >
               <HiMail className="text-purple-400 print:text-blue-600 text-base shrink-0" />
-              <span className="truncate">maruf614maruf614@gmail.com</span>
+              <span className="truncate">maruf04ahmed12rohan04@gmail.com</span>
             </a>
             <a
-              href="tel:+8801700000000"
+              href="https://wa.me/8801773532098?text=Hi%2C%20I%20saw%20your%20portfolio!"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-1.5 hover:text-purple-300 print:hover:text-blue-600 transition"
             >
               <HiPhone className="text-purple-400 print:text-blue-600 text-base shrink-0" />
-              <span>+880 1700-000000</span>
+              <span>+880 1773-532098</span>
             </a>
             <div className="flex items-center gap-1.5">
               <HiLocationMarker className="text-purple-400 print:text-blue-600 text-base shrink-0" />
@@ -93,7 +95,7 @@ const Resume = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/maruf-ahmed-rohan/?isSelfProfile=true"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 hover:text-purple-300 print:hover:text-blue-600 transition"

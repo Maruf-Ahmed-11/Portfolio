@@ -63,12 +63,12 @@ const AboutMe = () => {
               <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-purple-400/50 shadow-[0_0_15px_rgba(168,85,247,0.3)] shrink-0">
                 <img
                   src={profileImg}
-                  alt="Fuad Al Maimun"
+                  alt="Maruf Ahmed Rohan"
                   className="w-full h-full object-cover object-[center_20%]"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Fuad Al Maimun</h3>
+                <h3 className="text-xl font-bold text-white">Maruf Ahmed Rohan</h3>
                 <p className="text-sm font-semibold text-purple-400">Full Stack Developer</p>
                 <div className="flex items-center gap-1.5 text-xs text-zinc-400 mt-1">
                   <HiOutlineLocationMarker className="text-purple-400" />

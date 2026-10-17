@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-purple-400/40 bg-gradient-to-b from-[#1a082b] to-[#07020e] relative">
               <img
                 src={profileImg}
-                alt="Fuad Al Maimun"
+                alt="Maruf Ahmed Rohan"
                 className="w-full h-full object-cover object-[center_18%] scale-105"
               />
               {/* Inner bottom subtle vignette */}
@@ -103,7 +103,7 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
               Hi, I'm <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-fuchsia-300 to-purple-100">
-                Fuad Al Maimun
+                Maruf Ahmed Rohan
               </span>
               <span className="text-purple-400 font-light animate-pulse ml-1">|</span>
             </h1>
@@ -118,7 +118,7 @@ const Hero = () => {
 
           {/* Bio Description */}
           <p className="text-base sm:text-lg text-zinc-300/80 max-w-xl leading-relaxed">
-            Passionate about building responsive, modern, and accessible web applications using React, Next.js, and TypeScript with a strong focus on clean architecture and delightful user experiences.
+            An aspiring full-stack developer who enjoys turning ideas into functional, user-friendly web applications. I build responsive interfaces using React, Next.js, and TypeScript, with a strong focus on writing clean code and delivering delightful user experiences. I am a quick learner and I am always eager to learn new technologies and improve my skills.
           </p>
 
           {/* Action Buttons */}
@@ -156,7 +156,7 @@ const Hero = () => {
                 <FaGithub className="text-sm" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/maruf-ahmed-rohan/?isSelfProfile=true"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"
@@ -165,7 +165,7 @@ const Hero = () => {
                 <FaLinkedin className="text-sm" />
               </a>
               <a
-                href="mailto:maruf614maruf614@gmail.com"
+                href="mailto:maruf04ahmed12rohan04@gmail.com"
                 aria-label="Email"
                 className="w-8 h-8 rounded-full bg-white/5 border border-zinc-700/60 hover:border-purple-400 hover:text-purple-300 flex items-center justify-center text-zinc-300 transition"
               >

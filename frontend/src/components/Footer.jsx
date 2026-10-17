@@ -18,7 +18,7 @@ const Footer = () => {
               className="group flex flex-col items-start leading-none"
             >
               <span className="text-2xl font-black tracking-tight text-white flex items-baseline">
-                Fuad<span className="text-[#a855f7]">.</span>
+                Maruf<span className="text-[#a855f7]">.</span>
               </span>
               <span className="text-[9px] tracking-[0.3em] font-bold text-zinc-400 uppercase mt-0.5 group-hover:text-purple-300 transition-colors">
                 DEVELOPER
@@ -88,7 +88,7 @@ const Footer = () => {
                 <FaGithub className="text-base" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/maruf-ahmed-rohan/?isSelfProfile=true"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"
@@ -97,7 +97,7 @@ const Footer = () => {
                 <FaLinkedin className="text-base" />
               </a>
               <a
-                href="https://wa.me/"
+                href="https://wa.me/8801773532098?text=Hi%2C%20I%20saw%20your%20portfolio!"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp Profile"
@@ -106,7 +106,7 @@ const Footer = () => {
                 <FaWhatsapp className="text-base" />
               </a>
               <a
-                href="mailto:maruf614maruf614@gmail.com"
+                href="mailto:maruf04ahmed12rohan04@gmail.com"
                 aria-label="Send Email"
                 className="w-9 h-9 rounded-lg bg-[#140a28] hover:bg-purple-600 hover:text-white flex items-center justify-center text-zinc-300 border border-purple-500/20 hover:border-purple-400 transition"
               >
@@ -119,7 +119,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-purple-500/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
           <p>
-            &copy; {new Date().getFullYear()} Fuad Al Maimun. Built with React, Vite &amp; Tailwind CSS.
+            &copy; {new Date().getFullYear()} Maruf Ahmed Rohan. Built with React, Vite &amp; Tailwind CSS.
           </p>
 
           <button

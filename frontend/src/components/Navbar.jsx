@@ -51,17 +51,16 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 print:hidden ${
-        scrolled || !isHomePage
-          ? "bg-[#06020e]/90 backdrop-blur-md shadow-lg shadow-black/40 border-b border-purple-500/15"
-          : "bg-transparent border-b border-purple-500/10"
-      }`}
+      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 print:hidden ${scrolled || !isHomePage
+        ? "bg-[#06020e]/90 backdrop-blur-md shadow-lg shadow-black/40 border-b border-purple-500/15"
+        : "bg-transparent border-b border-purple-500/10"
+        }`}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6 md:px-12">
-        {/* Logo (matching 1st image: Fuad. DEVELOPER) */}
+        {/* Logo: Maruf. DEVELOPER */}
         <Link to="/" className="group flex flex-col items-start leading-none">
           <span className="text-xl sm:text-2xl font-black tracking-tight text-white flex items-baseline">
-            Fuad<span className="text-[#a855f7]">.</span>
+            Maruf<span className="text-[#a855f7]">.</span>
           </span>
           <span className="text-[9px] tracking-[0.3em] font-bold text-zinc-400 uppercase mt-0.5 group-hover:text-purple-300 transition-colors">
             DEVELOPER
@@ -78,11 +77,10 @@ const Navbar = () => {
               <li key={link.id} className="relative">
                 <a
                   href={href}
-                  className={`text-sm font-medium transition-colors duration-200 py-1 ${
-                    isLinkActive
-                      ? "text-white font-semibold"
-                      : "text-zinc-400 hover:text-white"
-                  }`}
+                  className={`text-sm font-medium transition-colors duration-200 py-1 ${isLinkActive
+                    ? "text-white font-semibold"
+                    : "text-zinc-400 hover:text-white"
+                    }`}
                 >
                   {link.name}
                   {isLinkActive && (
@@ -106,7 +104,7 @@ const Navbar = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/maruf-ahmed-rohan/?isSelfProfile=true"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn Profile"
@@ -115,7 +113,7 @@ const Navbar = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://wa.me/"
+            href="https://wa.me/8801773532098?text=Hi%2C%20I%20saw%20your%20portfolio!"
             target="_blank"
             rel="noreferrer"
             aria-label="WhatsApp"
@@ -148,9 +146,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`md:hidden bg-[#0a0414]/98 backdrop-blur-2xl border-b border-purple-500/20 shadow-2xl overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-96 py-6 px-6" : "max-h-0 py-0 px-6"
-        }`}
+        className={`md:hidden bg-[#0a0414]/98 backdrop-blur-2xl border-b border-purple-500/20 shadow-2xl overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 py-6 px-6" : "max-h-0 py-0 px-6"
+          }`}
       >
         <ul className="flex flex-col gap-4">
           {navLinks.map((link) => {
@@ -162,9 +159,8 @@ const Navbar = () => {
                 <a
                   href={href}
                   onClick={closeMenu}
-                  className={`block py-1.5 text-base font-medium transition ${
-                    isLinkActive ? "text-purple-400 font-bold" : "text-zinc-300 hover:text-white"
-                  }`}
+                  className={`block py-1.5 text-base font-medium transition ${isLinkActive ? "text-purple-400 font-bold" : "text-zinc-300 hover:text-white"
+                    }`}
                 >
                   {link.name}
                 </a>
@@ -178,10 +174,10 @@ const Navbar = () => {
               <a href="https://github.com/Maruf-Ahmed-11" target="_blank" rel="noreferrer" aria-label="GitHub Profile" className="hover:text-white">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile" className="hover:text-white">
+              <a href="https://www.linkedin.com/in/maruf-ahmed-rohan/?isSelfProfile=true" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile" className="hover:text-white">
                 <FaLinkedin />
               </a>
-              <a href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-white">
+              <a href="https://wa.me/8801773532098?text=Hi%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-white">
                 <FaWhatsapp />
               </a>
             </div>

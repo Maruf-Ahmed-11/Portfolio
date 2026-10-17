@@ -18,7 +18,7 @@ const projects = [
     description:
       "A modern, high-performance personal portfolio built for showcasing frontend engineering skills, interactive projects, and a responsive resume viewer. Features smooth section navigation, responsive mobile menu, dynamic routing, and ATS-friendly printable resume.",
     live: "https://example.com/portfolio-demo",
-    github: "https://github.com/example/portfolio-frontend",
+    github: "https://github.com/Maruf-Ahmed-11/Portfolio",
     challenges: [
       "Building a smooth active-section scroll spy with route-aware navigation",
       "Crafting an ATS-compatible, print-optimized resume stylesheet in React",

@@ -6,7 +6,7 @@ import {
   HiOutlineChatAlt2,
   HiOutlineCheckCircle,
 } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -88,7 +88,7 @@ const Contact = () => {
             <div className="space-y-4 pt-2">
               {/* Email */}
               <a
-                href="mailto:maruf614maruf614@gmail.com"
+                href="mailto:maruf04ahmed12rohan04@gmail.com"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-[#140a28] hover:bg-[#1b0d36] border border-purple-500/20 hover:border-purple-400 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#0e071c] text-purple-400 border border-purple-500/30 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
@@ -99,14 +99,16 @@ const Contact = () => {
                     Email Address
                   </span>
                   <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
-                    maruf614maruf614@gmail.com
+                    maruf04ahmed12rohan04@gmail.com
                   </span>
                 </div>
               </a>
 
               {/* Phone */}
               <a
-                href="tel:+8801700000000"
+                href="https://wa.me/8801773532098?text=Hi%2C%20I%20saw%20your%20portfolio!"
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-[#140a28] hover:bg-[#1b0d36] border border-purple-500/20 hover:border-purple-400 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#0e071c] text-purple-400 border border-purple-500/30 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
@@ -117,7 +119,7 @@ const Contact = () => {
                     Phone / WhatsApp
                   </span>
                   <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
-                    +880 1700-000000
+                    +880 1773-532098
                   </span>
                 </div>
               </a>
@@ -154,7 +156,7 @@ const Contact = () => {
                   <FaGithub className="text-lg" />
                 </a>
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/maruf-ahmed-rohan/?isSelfProfile=true"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn Profile"
@@ -163,13 +165,13 @@ const Contact = () => {
                   <FaLinkedin className="text-lg" />
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="https://wa.me/8801773532098?text=Hi%2C%20I%20saw%20your%20portfolio!"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Twitter Profile"
+                  aria-label="WhatsApp"
                   className="w-10 h-10 rounded-xl bg-[#140a28] border border-purple-500/20 hover:bg-purple-600 hover:text-white hover:border-purple-400 flex items-center justify-center text-zinc-300 transition shadow-2xs"
                 >
-                  <FaTwitter className="text-lg" />
+                  <FaWhatsapp className="text-lg" />
                 </a>
               </div>
             </div>
@@ -270,7 +272,7 @@ const Contact = () => {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Hello Fuad! We'd love to connect with you regarding an opportunity..."
+                  placeholder="Hello Maruf! We'd love to connect with you regarding an opportunity..."
                   required
                   className="w-full px-4 py-3 rounded-xl border border-purple-500/25 bg-[#140a28] text-white placeholder-zinc-500 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/30 focus:border-purple-400 transition resize-none"
                 ></textarea>
