@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-[#06020e] text-zinc-100 flex flex-col justify-between selection:bg-[#a855f7] selection:text-white">
+      <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#06020e] text-zinc-100 flex flex-col justify-between selection:bg-[#a855f7] selection:text-white">
         <Navbar />
         <div className="flex-grow">
           <Routes>

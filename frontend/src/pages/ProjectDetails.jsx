@@ -27,11 +27,11 @@ const ProjectDetails = () => {
   }
 
   return (
-    <main className="min-h-screen pt-28 pb-20 bg-[#06020e] text-zinc-100 relative">
+    <main className="min-h-screen pt-28 pb-20 bg-[#06020e] text-zinc-100 relative overflow-hidden w-full">
       {/* Background ambient glow */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+      <div className="absolute top-1/4 left-4 sm:left-1/4 w-72 h-72 sm:w-96 sm:h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Navigation Breadcrumb */}
         <div className="mb-6">
           <Link

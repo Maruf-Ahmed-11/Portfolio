@@ -8,8 +8,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#06020e] border-t border-purple-500/20 text-zinc-400 print:hidden mt-auto">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+    <footer className="bg-[#06020e] border-t border-purple-500/20 text-zinc-400 print:hidden mt-auto w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           {/* Brand & Mission */}
           <div className="md:col-span-2 space-y-3">

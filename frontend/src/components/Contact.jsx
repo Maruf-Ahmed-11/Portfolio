@@ -54,9 +54,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 md:px-12 max-w-7xl mx-auto relative">
+    <section id="contact" className="py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto relative overflow-hidden w-full">
       {/* Background ambient glow */}
-      <div className="absolute top-1/2 left-1/3 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+      <div className="absolute top-1/2 left-4 sm:left-1/3 w-72 h-72 sm:w-96 sm:h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
@@ -94,11 +94,11 @@ const Contact = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0e071c] text-purple-400 border border-purple-500/30 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
                   <HiOutlineMail className="text-xl" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <span className="text-xs text-zinc-400 font-semibold block">
                     Email Address
                   </span>
-                  <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
+                  <span className="text-xs sm:text-sm font-bold text-white group-hover:text-purple-300 transition-colors break-all">
                     maruf04ahmed12rohan04@gmail.com
                   </span>
                 </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0e071c] text-purple-400 border border-purple-500/30 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
                   <HiOutlinePhone className="text-xl" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <span className="text-xs text-zinc-400 font-semibold block">
                     Phone / WhatsApp
                   </span>
@@ -129,7 +129,7 @@ const Contact = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0e071c] text-purple-400 border border-purple-500/30 flex items-center justify-center shrink-0 shadow-2xs">
                   <HiOutlineLocationMarker className="text-xl" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <span className="text-xs text-zinc-400 font-semibold block">
                     Location
                   </span>

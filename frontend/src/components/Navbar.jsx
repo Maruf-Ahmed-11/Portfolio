@@ -51,12 +51,12 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 print:hidden ${scrolled || !isHomePage
+      className={`fixed w-full max-w-[100vw] top-0 left-0 right-0 z-50 transition-all duration-300 print:hidden ${scrolled || !isHomePage
         ? "bg-[#06020e]/90 backdrop-blur-md shadow-lg shadow-black/40 border-b border-purple-500/15"
         : "bg-transparent border-b border-purple-500/10"
         }`}
     >
-      <nav className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6 md:px-12">
+      <nav className="w-full max-w-7xl mx-auto flex items-center justify-between h-20 px-4 sm:px-6 md:px-12">
         {/* Logo: Maruf. DEVELOPER */}
         <Link to="/" className="group flex flex-col items-start leading-none">
           <span className="text-xl sm:text-2xl font-black tracking-tight text-white flex items-baseline">
@@ -146,7 +146,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`md:hidden bg-[#0a0414]/98 backdrop-blur-2xl border-b border-purple-500/20 shadow-2xl overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 py-6 px-6" : "max-h-0 py-0 px-6"
+        className={`md:hidden w-full max-w-full bg-[#0a0414]/98 backdrop-blur-2xl border-b border-purple-500/20 shadow-2xl overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 py-6 px-4 sm:px-6" : "max-h-0 py-0 px-4 sm:px-6"
           }`}
       >
         <ul className="flex flex-col gap-4">

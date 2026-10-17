@@ -63,9 +63,9 @@ const certifications = [
 
 const Education = () => {
   return (
-    <section id="education" className="py-24 px-6 md:px-12 max-w-7xl mx-auto relative">
+    <section id="education" className="py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto relative overflow-hidden w-full">
       {/* Background ambient glow */}
-      <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+      <div className="absolute top-1/2 right-4 sm:right-1/4 w-72 h-72 sm:w-96 sm:h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">

@@ -8,7 +8,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#06020e] pt-28 pb-16 px-4 sm:px-6 lg:px-8 font-sans print:bg-white print:p-0 print:m-0">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#06020e] pt-28 pb-16 px-4 sm:px-6 lg:px-8 font-sans print:bg-white print:p-0 print:m-0">
       {/* Top Action Bar (Hidden during print) */}
       <div className="max-w-[820px] mx-auto mb-6 flex flex-wrap items-center justify-between gap-4 print:hidden">
         <Link
