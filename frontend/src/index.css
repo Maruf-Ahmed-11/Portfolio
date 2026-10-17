@@ -106,16 +106,21 @@ html {
   animation: pulse-glow 3.5s ease-in-out infinite;
 }
 
-/* Print Specifications for 2-Column CV */
+/* Print Specifications for Single-Page A4 Physical Paper Print */
 @media print {
   @page {
-    size: A4;
-    margin: 6mm;
+    size: A4 portrait;
+    margin: 0;
   }
-  body, html {
-    background-color: #ffffff !important;
-    color: #111827 !important;
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
+  header, footer, nav {
+    display: none !important;
+  }
 }
+
