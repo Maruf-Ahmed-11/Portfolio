@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowUpRight, HiArrowDownTray } from "react-icons/hi2";
 import { HiMail } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
@@ -132,14 +132,16 @@ const Hero = () => {
               <HiArrowUpRight className="text-lg" />
             </a>
 
-            {/* Download CV ↗ -> links to /resume */}
-            <Link
-              to="/resume"
-              className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-white border border-purple-500/30 hover:border-purple-400 px-6 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-xs backdrop-blur-sm cursor-pointer text-sm sm:text-base group"
+            {/* Download CV -> downloads created CV directly */}
+            <a
+              href="/Maruf_Ahmed_Rohan_CV.pdf"
+              download="Maruf_Ahmed_Rohan_CV.pdf"
+              className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-white border border-purple-500/30 hover:border-purple-400 px-6 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-xs backdrop-blur-sm cursor-pointer text-sm sm:text-base group hover:scale-105"
+              title="Download Maruf Ahmed Rohan's CV (PDF)"
             >
               <span>Download CV</span>
-              <HiArrowUpRight className="text-lg text-zinc-400 group-hover:text-white transition-colors" />
-            </Link>
+              <HiArrowDownTray className="text-lg text-purple-300 group-hover:text-white transition-colors" />
+            </a>
           </div>
 
           {/* Connect with me */}

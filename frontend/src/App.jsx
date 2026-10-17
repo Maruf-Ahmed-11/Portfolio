@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import ProjectDetails from './pages/ProjectDetails';
 import Resume from './pages/Resume';
@@ -8,6 +9,7 @@ import Resume from './pages/Resume';
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-[#06020e] text-zinc-100 flex flex-col justify-between selection:bg-[#a855f7] selection:text-white">
         <Navbar />
         <div className="flex-grow">
