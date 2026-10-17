@@ -292,23 +292,53 @@ const Resume = () => {
             Education
           </h2>
 
-          <div className="space-y-3">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm">
+          <div className="space-y-3.5">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm">
+                <div>
+                  <h3 className="font-bold text-white print:text-gray-900">
+                    2nd Year Undergraduate, Marketing
+                  </h3>
+                  <p className="text-zinc-400 print:text-gray-600 text-xs sm:text-sm">
+                    Govt. BL College, Khulna, Bangladesh
+                  </p>
+                </div>
+                <div className="text-xs sm:text-sm text-zinc-400 print:text-gray-500 font-medium mt-1 sm:mt-0 sm:text-right">
+                  <span>2025 – Present</span>
+                </div>
+              </div>
+              <p className="text-xs text-zinc-400 print:text-gray-600 mt-1">
+                <strong className="font-bold text-zinc-300 print:text-gray-700">Relevant Coursework:</strong> Principles of Marketing, Consumer Behavior, Market Research &amp; Analysis, Brand Management, Digital Marketing Strategies, Business Communication.
+              </p>
+            </div>
+
+            <div className="pt-2 border-t border-purple-500/10 print:border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm">
               <div>
-                <h3 className="font-bold text-white print:text-gray-900">
-                  2nd Year Undergraduate, Marketing
-                </h3>
-                <p className="text-zinc-400 print:text-gray-600 text-xs sm:text-sm">
-                  Govt. BL College, Khulna, Bangladesh
+                <h4 className="font-semibold text-white print:text-gray-900 text-xs sm:text-sm">
+                  Higher Secondary Certificate (HSC) – Science
+                </h4>
+                <p className="text-zinc-400 print:text-gray-600 text-xs">
+                  Bangladesh Noubahini School &amp; College, Khulna <span className="text-purple-400 print:text-blue-600 font-semibold">• GPA: 4.83 / 5.00</span>
                 </p>
               </div>
-              <div className="text-xs sm:text-sm text-zinc-400 print:text-gray-500 font-medium mt-1 sm:mt-0 sm:text-right">
-                <span>2025– Present</span>
+              <div className="text-xs text-zinc-400 print:text-gray-500 font-medium mt-0.5 sm:mt-0 sm:text-right">
+                <span>2022 – 2024</span>
               </div>
             </div>
-            <p className="text-xs text-zinc-400 print:text-gray-600">
-              <strong className="font-bold text-zinc-300 print:text-gray-700">Relevant Coursework:</strong> Principles of Marketing, Consumer Behavior, Market Research &amp; Analysis, Brand Management, Digital Marketing Strategies, Business Communication.
-            </p>
+
+            <div className="pt-2 border-t border-purple-500/10 print:border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm">
+              <div>
+                <h4 className="font-semibold text-white print:text-gray-900 text-xs sm:text-sm">
+                  Secondary School Certificate (SSC) – Science
+                </h4>
+                <p className="text-zinc-400 print:text-gray-600 text-xs">
+                  Bangladesh Noubahini School &amp; College, Khulna <span className="text-purple-400 print:text-blue-600 font-semibold">• GPA: 5.00 / 5.00</span>
+                </p>
+              </div>
+              <div className="text-xs text-zinc-400 print:text-gray-500 font-medium mt-0.5 sm:mt-0 sm:text-right">
+                <span>2020 – 2022</span>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -321,22 +351,32 @@ const Resume = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
             <div className="p-3 bg-[#140a28] print:bg-gray-50 rounded-lg border border-purple-500/20 print:border-gray-100">
-              <h4 className="font-bold text-white print:text-gray-900">
-                Complete Web Development Bootcamp (MERN)
-              </h4>
-              <p className="text-xs text-purple-400 print:text-gray-500 font-semibold mt-0.5">Online Learning Academy (6-Month Intensive)</p>
+              <div className="flex items-start justify-between gap-2">
+                <h4 className="font-bold text-white print:text-gray-900">
+                  AI-Driven Full Stack Web Engineering (MERN)
+                </h4>
+                <span className="text-[10px] font-bold text-purple-300 print:text-gray-600 bg-purple-950/60 print:bg-gray-200 px-1.5 py-0.5 rounded shrink-0">
+                  2026 (Ongoing)
+                </span>
+              </div>
+              <p className="text-xs text-purple-400 print:text-gray-500 font-semibold mt-0.5">Programming Hero</p>
               <p className="text-xs text-zinc-400 print:text-gray-600 mt-1">
-                Completed 60+ assignments, built 10+ real-world web apps using React, Tailwind CSS, Node, and MongoDB.
+                Building real-world applications covering TypeScript, React, Tailwind CSS, Node.js, Next.js, and MongoDB.
               </p>
             </div>
 
             <div className="p-3 bg-[#140a28] print:bg-gray-50 rounded-lg border border-purple-500/20 print:border-gray-100">
-              <h4 className="font-bold text-white print:text-gray-900">
-                Responsive Web Design &amp; JavaScript Algorithms
-              </h4>
-              <p className="text-xs text-purple-400 print:text-gray-500 font-semibold mt-0.5">freeCodeCamp Certification</p>
+              <div className="flex items-start justify-between gap-2">
+                <h4 className="font-bold text-white print:text-gray-900">
+                  Professional Front-End Web Engineering with React
+                </h4>
+                <span className="text-[10px] font-bold text-purple-300 print:text-gray-600 bg-purple-950/60 print:bg-gray-200 px-1.5 py-0.5 rounded shrink-0">
+                  2025
+                </span>
+              </div>
+              <p className="text-xs text-purple-400 print:text-gray-500 font-semibold mt-0.5">NonAcademy-Batch Alpha 1.0.</p>
               <p className="text-xs text-zinc-400 print:text-gray-600 mt-1">
-                Demonstrated mastery in semantic HTML5, CSS Flexbox/Grid, and algorithmic JavaScript problem-solving.
+                Verified competency in semantic HTML5, modern CSS Grid/Flexbox, and accessible web standards.
               </p>
             </div>
           </div>

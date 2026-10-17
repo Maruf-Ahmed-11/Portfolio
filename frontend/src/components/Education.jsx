@@ -26,19 +26,19 @@ const educationHistory = [
   },
   {
     degree: "Higher Secondary Certificate (HSC) – Science",
-    institution: "Your College Name",
-    location: "Dhaka, Bangladesh",
-    period: "2019 – 2021",
-    grade: "GPA: 5.00 / 5.00 (A+)",
+    institution: "Bangladesh Noubahini School & College",
+    location: "Khulna, Bangladesh",
+    period: "2022 – 2024",
+    grade: "GPA: 4.83 / 5.00 (A)",
     description:
       "Completed higher secondary education with a major in Science, developing strong analytical thinking and mathematical problem-solving skills.",
     coursework: ["Physics", "Chemistry", "Higher Mathematics", "Information & Communication Tech (ICT)"],
   },
   {
     degree: "Secondary School Certificate (SSC) – Science",
-    institution: "Your High School Name",
-    location: "Dhaka, Bangladesh",
-    period: "2017 – 2019",
+    institution: "Bangladesh Noubahini School & College",
+    location: "Khulna, Bangladesh",
+    period: "2020 – 2022",
     grade: "GPA: 5.00 / 5.00 (A+)",
     description:
       "Graduated secondary school with distinction in Science, establishing foundational curiosity for science and computing.",
@@ -48,23 +48,17 @@ const educationHistory = [
 
 const certifications = [
   {
-    title: "Complete Web Development Bootcamp (MERN)",
-    issuer: "Online Learning Academy",
-    year: "2024",
-    desc: "Built 10+ real-world applications covering React, Tailwind CSS, Node.js, Express, and MongoDB.",
+    title: "AI-Driven Full Stack Web Engineering (MERN)",
+    issuer: "Programming Hero",
+    year: "2026 (Ongoing)",
+    desc: "Building real-world applications covering TypeScript, React, Tailwind CSS, Node.js, Next.js, and MongoDB.",
   },
   {
-    title: "Responsive Web Design Certification",
-    issuer: "freeCodeCamp",
-    year: "2023",
+    title: "Professional Front-End Web Engineering with React",
+    issuer: "NonAcademy-Batch Alpha 1.0.",
+    year: "2025",
     desc: "Verified competency in semantic HTML5, modern CSS Grid/Flexbox, and accessible web standards.",
-  },
-  {
-    title: "JavaScript Algorithms & Data Structures",
-    issuer: "freeCodeCamp",
-    year: "2024",
-    desc: "Mastery of ES6+, functional programming, OOP in JS, and algorithmic problem-solving.",
-  },
+  }
 ];
 
 const Education = () => {
